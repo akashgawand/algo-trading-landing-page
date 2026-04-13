@@ -33,7 +33,7 @@ const AboutGemalgo = () => {
     ];
 
     return (
-        <section className="relative w-full overflow-hidden bg-[#020617] text-white antialiased selection:bg-blue-500/30">
+        <section id="about" className="relative w-full overflow-hidden bg-[#020617] text-white antialiased selection:bg-blue-500/30">
             {/* Cinematic Background Elements */}
             {/* TOP BLEND */}
             <div className="pointer-events-none absolute top-0 left-0 w-full h-32 z-[2] 

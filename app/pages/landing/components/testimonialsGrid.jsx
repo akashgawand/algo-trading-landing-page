@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TestimonialsGrid = () => {
     return (
-        <div className="min-h-screen bg-[#060613] p-8 relative overflow-hidden">
+        <div id="testimonials" className="min-h-screen bg-[#060613] p-8 relative overflow-hidden">
             {/* TOP BLEND */}
             <div className="pointer-events-none absolute top-0 left-0 w-full h-32 z-[2] 
 bg-gradient-to-b from-[#0a0613] via-[#0a0613]/60 to-transparent" />

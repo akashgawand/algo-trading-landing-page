@@ -6,7 +6,7 @@ import StrategiesDashboard from "./strategyCard";
 export const Strategies = () => {
 
     return (
-        <section className="bg-[#01030b] h-screen w-full">
+        <section id="strategies" className="bg-[#01030b] h-screen w-full">
             {/* Header */}
             <div className="text-center  mb-5">
 

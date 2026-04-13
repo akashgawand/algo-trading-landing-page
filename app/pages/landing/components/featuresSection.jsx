@@ -53,7 +53,7 @@ const lineData = [
 
 export default function FeaturesSection() {
     return (
-        <section className="relative min-h-screen bg-[#060613] py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section id="features" className="relative min-h-screen bg-[#060613] py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
             {/* Top-side shadow peak */}
             {/* <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-40 
 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.35),rgba(59,130,246,0.15)_40%,transparent_80%)] 
