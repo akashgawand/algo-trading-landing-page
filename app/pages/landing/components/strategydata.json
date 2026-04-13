@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Orion",
+    "type": "Stocks",
+    "initialInvestment": "$100,000",
+    "startDate": "February 2020",
+    "currentValue": "$1,370,354",
+    "totalReturn": "+$1,270,354",
+    "returnPercent": "+1270.4%",
+    "avgMonthlyPercent": "3.56%",
+    "months": 75,
+    "positiveMonths": 62,
+    "successRate": "82.7%",
+    "subStrategies": [
+      {
+        "name": "Orion ",
+        "type": "Stocks",
+        "initialInvestment": "$50,000",
+        "startDate": "January 2022",
+        "currentValue": "$318,750",
+        "totalReturn": "+$268,750",
+        "returnPercent": "+537.5%",
+        "avgMonthlyPercent": "3.88%",
+        "months": 39,
+        "positiveMonths": 31,
+        "successRate": "79.5%"
+      },
+      {
+        "name": "Orion ",
+        "type": "Stocks",
+        "initialInvestment": "$75,000",
+        "startDate": "March 2021",
+        "currentValue": "$492,300",
+        "totalReturn": "+$417,300",
+        "returnPercent": "+556.4%",
+        "avgMonthlyPercent": "4.12%",
+        "months": 49,
+        "positiveMonths": 40,
+        "successRate": "81.6%"
+      },
+      {
+        "name": "Orion ",
+        "type": "Stocks",
+        "initialInvestment": "$120,000",
+        "startDate": "June 2020",
+        "currentValue": "$810,480",
+        "totalReturn": "+$690,480",
+        "returnPercent": "+575.4%",
+        "avgMonthlyPercent": "3.71%",
+        "months": 58,
+        "positiveMonths": 48,
+        "successRate": "82.8%"
+      }
+    ]
+  },
+  {
+    "name": "Apollo",
+    "type": "Gold ",
+    "initialInvestment": "$670,000",
+    "startDate": "January 2024",
+    "currentValue": "$796,598",
+    "totalReturn": "+$126,598",
+    "returnPercent": "+18.9%",
+    "avgMonthlyPercent": "2.58%",
+    "months": 7,
+    "positiveMonths": 4,
+    "successRate": "57.1%",
+    "subStrategies": [
+      {
+        "name": "Apollo",
+        "type": "Gold ",
+        "initialInvestment": "$30,000",
+        "startDate": "January 2024",
+        "currentValue": "$78,081",
+        "totalReturn": "+$48,081",
+        "returnPercent": "+160.3%",
+        "avgMonthlyPercent": "3.77%",
+        "months": 26,
+        "positiveMonths": 21,
+        "successRate": "80.8%"
+      },
+      {
+        "name": "Apollo",
+        "type": "Gold ",
+        "initialInvestment": "$50,000",
+        "startDate": "March 2024",
+        "currentValue": "$119,627",
+        "totalReturn": "+$69,627",
+        "returnPercent": "+139.3%",
+        "avgMonthlyPercent": "3.77%",
+        "months": 24,
+        "positiveMonths": 19,
+        "successRate": "79.2%"
+      },
+      {
+        "name": "Apollo",
+        "type": "Gold ",
+        "initialInvestment": "$300,000",
+        "startDate": "December 2024",
+        "currentValue": "$506,003",
+        "totalReturn": "+$206,003",
+        "returnPercent": "+68.7%",
+        "avgMonthlyPercent": "3.61%",
+        "months": 15,
+        "positiveMonths": 12,
+        "successRate": "80.0%"
+      },
+      {
+        "name": "Apollo",
+        "type": "Gold ",
+        "initialInvestment": "$670,000",
+        "startDate": "August 2025",
+        "currentValue": "$796,598",
+        "totalReturn": "+$126,598",
+        "returnPercent": "+18.9%",
+        "avgMonthlyPercent": "2.58%",
+        "months": 7,
+        "positiveMonths": 4,
+        "successRate": "57.1%"
+      }
+    ]
+  },
+  {
+    "name": "NikolAI",
+    "type": "EUR / USD",
+    "initialInvestment": "$800,000",
+    "startDate": "August 2023",
+    "currentValue": "$2,247,706",
+    "totalReturn": "+$1,447,706",
+    "returnPercent": "+181.0%",
+    "avgMonthlyPercent": "3.87%",
+    "months": 28,
+    "positiveMonths": 26,
+    "successRate": "92.9%",
+    "subStrategies": [
+      {
+        "name": "NikolAI",
+        "type": "EUR / USD",
+        "initialInvestment": "$800,000",
+        "startDate": "August 2023",
+        "currentValue": "$2,247,706",
+        "totalReturn": "+$1,447,706",
+        "returnPercent": "+181.0%",
+        "avgMonthlyPercent": "3.87%",
+        "months": 28,
+        "positiveMonths": 26,
+        "successRate": "92.9%"
+      },
+      {
+        "name": "NikolAI",
+        "type": "EUR / USD",
+        "initialInvestment": "$50,000",
+        "startDate": "May 2024",
+        "currentValue": "$102,815",
+        "totalReturn": "+$52,815",
+        "returnPercent": "+105.6%",
+        "avgMonthlyPercent": "4.03%",
+        "months": 19,
+        "positiveMonths": 17,
+        "successRate": "89.5%"
+      },
+      {
+        "name": "NikolAI",
+        "type": "EUR / USD",
+        "initialInvestment": "$75,000",
+        "startDate": "March 2025",
+        "currentValue": "$95,186",
+        "totalReturn": "+$20,186",
+        "returnPercent": "+26.9%",
+        "avgMonthlyPercent": "2.82%",
+        "months": 9,
+        "positiveMonths": 8,
+        "successRate": "88.9%"
+      }
+    ]
+  }
+]

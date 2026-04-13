@@ -1,0 +1,594 @@
+{
+    "algorithm": "Apollo",
+    "primaryAccount": {
+        "name": "Apollo",
+        "type": "Gold ",
+        "summary": {
+            "initialInvestment": 670000.0,
+            "currentValue": 767000,
+            "totalReturn": 97000,
+            "returnPercent": 14.48,
+            "months": 7,
+            "successRate": 85.7,
+            "positiveMonths": 6,
+            "avgMonthlyPercent": 2.58,
+            "period": "January 2024 - Apr 2026"
+        },
+        "metrics": {
+            "sharpeRatio": 3.35,
+            "maxDrawdown": 5.2,
+            "totalTrades": 4465,
+            "tickersTraded": 183
+        },
+        "monthlyHistory": [
+            {
+                "month": "Jul 2024",
+                "returnPercent": 0.46,
+                "profit": 3492.69,
+                "value": 766999.74
+            },
+            {
+                "month": "Jun 2024",
+                "returnPercent": 1.94,
+                "profit": 14544.12,
+                "value": 763507.05
+            },
+            {
+                "month": "May 2024",
+                "returnPercent": 3.2,
+                "profit": 23231.03,
+                "value": 748962.93
+            },
+            {
+                "month": "Apr 2024",
+                "returnPercent": 2.15,
+                "profit": 15254.28,
+                "value": 725731.9
+            },
+            {
+                "month": "Mar 2024",
+                "returnPercent": 2.46,
+                "profit": 17025.3,
+                "value": 710477.62
+            },
+            {
+                "month": "Feb 2024",
+                "returnPercent": 3.54,
+                "profit": 23681.52,
+                "value": 693452.32
+            },
+            {
+                "month": "Jan 2024",
+                "returnPercent": -0.03,
+                "profit": -229.2,
+                "value": 669770.8
+            }
+        ]
+    },
+    "subAccounts": [
+        {
+            "name": "Apollo",
+            "type": "Gold ",
+            "summary": {
+                "initialInvestment": 30000.0,
+                "currentValue": 71335,
+                "totalReturn": 41335,
+                "returnPercent": 137.78,
+                "months": 26,
+                "successRate": 100.0,
+                "positiveMonths": 26,
+                "avgMonthlyPercent": 3.77,
+                "period": "January 2024 - Apr 2026"
+            },
+            "metrics": {
+                "sharpeRatio": 2.97,
+                "maxDrawdown": 7.73,
+                "totalTrades": 3242,
+                "tickersTraded": 102
+            },
+            "monthlyHistory": [
+                {
+                    "month": "Feb 2026",
+                    "returnPercent": 5.68,
+                    "profit": 3837.08,
+                    "value": 71334.65
+                },
+                {
+                    "month": "Jan 2026",
+                    "returnPercent": 1.37,
+                    "profit": 910.53,
+                    "value": 67497.57
+                },
+                {
+                    "month": "Dec 2025",
+                    "returnPercent": 4.75,
+                    "profit": 3021.17,
+                    "value": 66587.04
+                },
+                {
+                    "month": "Nov 2025",
+                    "returnPercent": 3.04,
+                    "profit": 1877.02,
+                    "value": 63565.87
+                },
+                {
+                    "month": "Oct 2025",
+                    "returnPercent": 1.37,
+                    "profit": 835.63,
+                    "value": 61688.85
+                },
+                {
+                    "month": "Sep 2025",
+                    "returnPercent": 4.37,
+                    "profit": 2547.26,
+                    "value": 60853.22
+                },
+                {
+                    "month": "Aug 2025",
+                    "returnPercent": 4.02,
+                    "profit": 2253.38,
+                    "value": 58305.96
+                },
+                {
+                    "month": "Jul 2025",
+                    "returnPercent": 1.34,
+                    "profit": 739.59,
+                    "value": 56052.58
+                },
+                {
+                    "month": "Jun 2025",
+                    "returnPercent": 2.7,
+                    "profit": 1451.88,
+                    "value": 55312.99
+                },
+                {
+                    "month": "May 2025",
+                    "returnPercent": 1.42,
+                    "profit": 755.01,
+                    "value": 53861.11
+                },
+                {
+                    "month": "Apr 2025",
+                    "returnPercent": 5.41,
+                    "profit": 2725.95,
+                    "value": 53106.1
+                },
+                {
+                    "month": "Mar 2025",
+                    "returnPercent": 3.96,
+                    "profit": 1920.43,
+                    "value": 50380.15
+                },
+                {
+                    "month": "Feb 2025",
+                    "returnPercent": 5.88,
+                    "profit": 2691.59,
+                    "value": 48459.72
+                },
+                {
+                    "month": "Jan 2025",
+                    "returnPercent": 3.44,
+                    "profit": 1522.44,
+                    "value": 45768.13
+                },
+                {
+                    "month": "Dec 2024",
+                    "returnPercent": 6.03,
+                    "profit": 2516.47,
+                    "value": 44245.69
+                },
+                {
+                    "month": "Nov 2024",
+                    "returnPercent": 0.76,
+                    "profit": 315.6,
+                    "value": 41729.22
+                },
+                {
+                    "month": "Oct 2024",
+                    "returnPercent": 1.47,
+                    "profit": 600.29,
+                    "value": 41413.62
+                },
+                {
+                    "month": "Sep 2024",
+                    "returnPercent": 4.69,
+                    "profit": 1830.11,
+                    "value": 40813.33
+                },
+                {
+                    "month": "Aug 2024",
+                    "returnPercent": 4.77,
+                    "profit": 1773.36,
+                    "value": 38983.22
+                },
+                {
+                    "month": "Jul 2024",
+                    "returnPercent": 1.03,
+                    "profit": 380.36,
+                    "value": 37209.86
+                },
+                {
+                    "month": "Jun 2024",
+                    "returnPercent": 3.04,
+                    "profit": 1087.25,
+                    "value": 36829.5
+                },
+                {
+                    "month": "May 2024",
+                    "returnPercent": 2.14,
+                    "profit": 749.9,
+                    "value": 35742.25
+                },
+                {
+                    "month": "Apr 2024",
+                    "returnPercent": 6.65,
+                    "profit": 2182.1,
+                    "value": 34992.35
+                },
+                {
+                    "month": "Mar 2024",
+                    "returnPercent": 3.46,
+                    "profit": 1096.46,
+                    "value": 32810.25
+                },
+                {
+                    "month": "Feb 2024",
+                    "returnPercent": 0.79,
+                    "profit": 249.46,
+                    "value": 31713.79
+                },
+                {
+                    "month": "Jan 2024",
+                    "returnPercent": 4.88,
+                    "profit": 1464.33,
+                    "value": 31464.33
+                }
+            ]
+        },
+        {
+            "name": "Apollo",
+            "type": "Gold ",
+            "summary": {
+                "initialInvestment": 50000.0,
+                "currentValue": 123383,
+                "totalReturn": 73383,
+                "returnPercent": 146.77,
+                "months": 24,
+                "successRate": 100.0,
+                "positiveMonths": 24,
+                "avgMonthlyPercent": 3.77,
+                "period": "March 2024 - Apr 2026"
+            },
+            "metrics": {
+                "sharpeRatio": 3.06,
+                "maxDrawdown": 4.77,
+                "totalTrades": 2501,
+                "tickersTraded": 122
+            },
+            "monthlyHistory": [
+                {
+                    "month": "Feb 2026",
+                    "returnPercent": 2.78,
+                    "profit": 3339.38,
+                    "value": 123383.34
+                },
+                {
+                    "month": "Jan 2026",
+                    "returnPercent": 4.88,
+                    "profit": 5584.79,
+                    "value": 120043.96
+                },
+                {
+                    "month": "Dec 2025",
+                    "returnPercent": 6.14,
+                    "profit": 6624.83,
+                    "value": 114459.17
+                },
+                {
+                    "month": "Nov 2025",
+                    "returnPercent": 2.13,
+                    "profit": 2253.98,
+                    "value": 107834.34
+                },
+                {
+                    "month": "Oct 2025",
+                    "returnPercent": 1.68,
+                    "profit": 1747.41,
+                    "value": 105580.36
+                },
+                {
+                    "month": "Sep 2025",
+                    "returnPercent": 0.9,
+                    "profit": 921.34,
+                    "value": 103832.95
+                },
+                {
+                    "month": "Aug 2025",
+                    "returnPercent": 4.73,
+                    "profit": 4643.95,
+                    "value": 102911.61
+                },
+                {
+                    "month": "Jul 2025",
+                    "returnPercent": 3.27,
+                    "profit": 3112.48,
+                    "value": 98267.66
+                },
+                {
+                    "month": "Jun 2025",
+                    "returnPercent": 1.37,
+                    "profit": 1286.71,
+                    "value": 95155.18
+                },
+                {
+                    "month": "May 2025",
+                    "returnPercent": 6.01,
+                    "profit": 5320.49,
+                    "value": 93868.47
+                },
+                {
+                    "month": "Apr 2025",
+                    "returnPercent": 6.44,
+                    "profit": 5354.48,
+                    "value": 88547.98
+                },
+                {
+                    "month": "Mar 2025",
+                    "returnPercent": 2.58,
+                    "profit": 2089.68,
+                    "value": 83193.5
+                },
+                {
+                    "month": "Feb 2025",
+                    "returnPercent": 4.01,
+                    "profit": 3125.91,
+                    "value": 81103.82
+                },
+                {
+                    "month": "Jan 2025",
+                    "returnPercent": 2.75,
+                    "profit": 2087.69,
+                    "value": 77977.91
+                },
+                {
+                    "month": "Dec 2024",
+                    "returnPercent": 5.99,
+                    "profit": 4285.99,
+                    "value": 75890.22
+                },
+                {
+                    "month": "Nov 2024",
+                    "returnPercent": 0.95,
+                    "profit": 672.43,
+                    "value": 71604.23
+                },
+                {
+                    "month": "Oct 2024",
+                    "returnPercent": 5.43,
+                    "profit": 3656.27,
+                    "value": 70931.8
+                },
+                {
+                    "month": "Sep 2024",
+                    "returnPercent": 2.82,
+                    "profit": 1842.49,
+                    "value": 67275.53
+                },
+                {
+                    "month": "Aug 2024",
+                    "returnPercent": 5.81,
+                    "profit": 3594.13,
+                    "value": 65433.04
+                },
+                {
+                    "month": "Jul 2024",
+                    "returnPercent": 2.16,
+                    "profit": 1309.25,
+                    "value": 61838.91
+                },
+                {
+                    "month": "Jun 2024",
+                    "returnPercent": 4.93,
+                    "profit": 2843.3,
+                    "value": 60529.66
+                },
+                {
+                    "month": "May 2024",
+                    "returnPercent": 4.94,
+                    "profit": 2714.85,
+                    "value": 57686.36
+                },
+                {
+                    "month": "Apr 2024",
+                    "returnPercent": 5.95,
+                    "profit": 3085.66,
+                    "value": 54971.51
+                },
+                {
+                    "month": "Mar 2024",
+                    "returnPercent": 3.77,
+                    "profit": 1885.85,
+                    "value": 51885.85
+                }
+            ]
+        },
+        {
+            "name": "Apollo",
+            "type": "Gold ",
+            "summary": {
+                "initialInvestment": 300000.0,
+                "currentValue": 461917,
+                "totalReturn": 161917,
+                "returnPercent": 53.97,
+                "months": 15,
+                "successRate": 100.0,
+                "positiveMonths": 15,
+                "avgMonthlyPercent": 3.61,
+                "period": "December 2024 - Apr 2026"
+            },
+            "metrics": {
+                "sharpeRatio": 3.38,
+                "maxDrawdown": 6.12,
+                "totalTrades": 2832,
+                "tickersTraded": 57
+            },
+            "monthlyHistory": [
+                {
+                    "month": "Feb 2026",
+                    "returnPercent": 1.59,
+                    "profit": 7208.26,
+                    "value": 461917.34
+                },
+                {
+                    "month": "Jan 2026",
+                    "returnPercent": 2.2,
+                    "profit": 9805.39,
+                    "value": 454709.08
+                },
+                {
+                    "month": "Dec 2025",
+                    "returnPercent": 3.15,
+                    "profit": 13593.79,
+                    "value": 444903.69
+                },
+                {
+                    "month": "Nov 2025",
+                    "returnPercent": 4.75,
+                    "profit": 19541.66,
+                    "value": 431309.9
+                },
+                {
+                    "month": "Oct 2025",
+                    "returnPercent": 1.73,
+                    "profit": 7020.46,
+                    "value": 411768.24
+                },
+                {
+                    "month": "Sep 2025",
+                    "returnPercent": 2.09,
+                    "profit": 8279.35,
+                    "value": 404747.78
+                },
+                {
+                    "month": "Aug 2025",
+                    "returnPercent": 2.54,
+                    "profit": 9818.05,
+                    "value": 396468.43
+                },
+                {
+                    "month": "Jul 2025",
+                    "returnPercent": 2.76,
+                    "profit": 10396.81,
+                    "value": 386650.38
+                },
+                {
+                    "month": "Jun 2025",
+                    "returnPercent": 1.75,
+                    "profit": 6457.43,
+                    "value": 376253.57
+                },
+                {
+                    "month": "May 2025",
+                    "returnPercent": 5.75,
+                    "profit": 20100.59,
+                    "value": 369796.14
+                },
+                {
+                    "month": "Apr 2025",
+                    "returnPercent": 3.48,
+                    "profit": 11745.23,
+                    "value": 349695.55
+                },
+                {
+                    "month": "Mar 2025",
+                    "returnPercent": 5.99,
+                    "profit": 19085.46,
+                    "value": 337950.32
+                },
+                {
+                    "month": "Feb 2025",
+                    "returnPercent": 2.35,
+                    "profit": 7318.49,
+                    "value": 318864.86
+                },
+                {
+                    "month": "Jan 2025",
+                    "returnPercent": 2.86,
+                    "profit": 8650.02,
+                    "value": 311546.37
+                },
+                {
+                    "month": "Dec 2024",
+                    "returnPercent": 0.97,
+                    "profit": 2896.35,
+                    "value": 302896.35
+                }
+            ]
+        },
+        {
+            "name": "Apollo",
+            "type": "Gold ",
+            "summary": {
+                "initialInvestment": 670000.0,
+                "currentValue": 815647,
+                "totalReturn": 145647,
+                "returnPercent": 21.74,
+                "months": 7,
+                "successRate": 100.0,
+                "positiveMonths": 7,
+                "avgMonthlyPercent": 2.58,
+                "period": "August 2025 - Apr 2026"
+            },
+            "metrics": {
+                "sharpeRatio": 3.45,
+                "maxDrawdown": 6.35,
+                "totalTrades": 2921,
+                "tickersTraded": 86
+            },
+            "monthlyHistory": [
+                {
+                    "month": "Feb 2026",
+                    "returnPercent": 4.11,
+                    "profit": 32176.94,
+                    "value": 815646.64
+                },
+                {
+                    "month": "Jan 2026",
+                    "returnPercent": 2.28,
+                    "profit": 17480.14,
+                    "value": 783469.7
+                },
+                {
+                    "month": "Dec 2025",
+                    "returnPercent": 4.8,
+                    "profit": 35073.81,
+                    "value": 765989.56
+                },
+                {
+                    "month": "Nov 2025",
+                    "returnPercent": 1.48,
+                    "profit": 10658.71,
+                    "value": 730915.75
+                },
+                {
+                    "month": "Oct 2025",
+                    "returnPercent": 1.14,
+                    "profit": 8113.88,
+                    "value": 720257.04
+                },
+                {
+                    "month": "Sep 2025",
+                    "returnPercent": 1.67,
+                    "profit": 11688.3,
+                    "value": 712143.16
+                },
+                {
+                    "month": "Aug 2025",
+                    "returnPercent": 4.55,
+                    "profit": 30454.86,
+                    "value": 700454.86
+                }
+            ]
+        }
+    ]
+}
