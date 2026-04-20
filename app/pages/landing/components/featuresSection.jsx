@@ -71,7 +71,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                 {/* Header */}
                 <div className="text-center mt-12 mb-16">
 
-                    <h2 className="text-4xl sm:text-5xl font-semibold text-white mb-4 tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
                         Discover the Features That Simplify<br />
                         <span className="text-blue-200/80">and Empower Your Finances</span>
                     </h2>

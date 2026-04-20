@@ -67,10 +67,10 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-medium tracking-wider text-blue-300 uppercase">
                         Our Identity
                     </span>
-                    <h1 className="mx-auto mb-6 max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 md:text-6xl lg:text-7xl">
+                    <h1 className="mx-auto mb-6 max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">
                         About <span className="text-blue-500">Gemalgo</span>:
                         <br />
-                        <span className="text-4xl sm:text-5xl text-gray-400">Advanced Algorithmic Trading</span>
+                        <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400">Advanced Algorithmic Trading</span>
                     </h1>
                     <p className="mx-auto max-w-2xl text-lg text-slate-400">
                         Bridging the gap between institutional-grade automation and the individual investor through sophisticated AI-driven execution.

@@ -44,9 +44,9 @@ const MiniCard: React.FC<{ data: StrategyData; strategyId: string; index: number
       <div className="strategy-card-inner">
         <div className="strategy-ray" />
 
-        <div className="relative z-10 w-full">
+        <div className="relative z-10 w-full h-full flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-between mb-6 md:mb-10">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-white/10  border border-white/20 flex items-center justify-center">
                 <span className="text-white font-semibold text-lg tracking-wider">
@@ -71,11 +71,11 @@ const MiniCard: React.FC<{ data: StrategyData; strategyId: string; index: number
           </div>
 
           {/* Primary Metric */}
-          <div className="mb-10">
+          <div className="mb-6 md:mb-10">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
               Current Value
             </p>
-            <div className="text-4xl font-bold text-white tracking-tight mb-1">
+            <div className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-1">
               {data.currentValue}
             </div>
             <div className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-6">
@@ -93,7 +93,7 @@ const MiniCard: React.FC<{ data: StrategyData; strategyId: string; index: number
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-y-8 gap-x-4">
+          <div className="grid grid-cols-2 gap-y-6 md:gap-y-8 gap-x-4 mb-6 md:mb-10">
             {stats.map((stat, i) => (
               <div key={i} className="space-y-2">
                 <div className="flex items-center gap-3 text-slate-400">
@@ -110,7 +110,7 @@ const MiniCard: React.FC<{ data: StrategyData; strategyId: string; index: number
           </div>
           <button
             onClick={handleViewDashboard}
-            className="w-full mt-15 py-4 px-6 cursor-pointer rounded-2xl bg-white text-black text-sm font-black hover:bg-slate-200 transition-all duration-500 flex items-center justify-center gap-2.5 group shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+            className="w-full mt-auto py-3.5 md:py-4 px-6 cursor-pointer rounded-2xl bg-white text-black text-sm font-black hover:bg-slate-200 transition-all duration-500 flex items-center justify-center gap-2.5 group shadow-[0_0_20px_rgba(255,255,255,0.1)]"
           >
             VIEW DASHBOARD
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
@@ -168,7 +168,7 @@ const StrategyDrawer: React.FC<StrategyDrawerProps> = ({
         </div>
 
         {/* Cards */}
-        <div className="flex-1  px-8 py-10">
+        <div className="flex-1 overflow-y-auto px-4 sm:px-8 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {strategies.map((s, i) => (
               <MiniCard key={i} data={s} strategyId={parentName} index={i} />

@@ -41,7 +41,7 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
 
   return (
     <>
-      <div className="strategy-outer">
+      <div className="strategy-outer mx-auto">
         {/* The Animated Dot */}
         <div className="strategy-dot" />
 
@@ -50,8 +50,8 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
           <div className="strategy-ray" />
 
           {/* Header */}
-          <div className="relative z-10 w-full">
-            <div className="flex items-center justify-between mb-10">
+          <div className="relative z-10 w-full h-full flex flex-col">
+            <div className="flex items-center justify-between mb-6 md:mb-10">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center">
                   <span className="text-white font-semibold text-lg tracking-wider">
@@ -76,11 +76,11 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
             </div>
 
             {/* Primary Metric */}
-            <div className="mb-10">
+            <div className="mb-6 md:mb-10">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
                 Current Value
               </p>
-              <div className="text-4xl font-bold text-white tracking-tight mb-1">
+              <div className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-1">
                 {data.currentValue}
               </div>
               <div className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-6">
@@ -98,7 +98,7 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-y-8 gap-x-4 mb-10">
+            <div className="grid grid-cols-2 gap-y-6 md:gap-y-8 gap-x-4 mb-6 md:mb-10">
               {stats.map((stat, i) => (
                 <div key={i} className="space-y-2">
                   <div className="flex items-center gap-3 text-slate-400">
@@ -117,7 +117,7 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
             {/* Action Button */}
             <button
               onClick={() => setDrawerOpen(true)}
-              className="w-full py-4 px-6 cursor-pointer rounded-2xl bg-white text-black text-sm font-black hover:bg-slate-200 transition-all duration-500 flex items-center justify-center gap-2.5 group shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+              className="w-full mt-8 md:mt-auto  py-3.5 md:py-4 px-6 cursor-pointer rounded-2xl bg-white text-black text-sm font-black hover:bg-slate-200 transition-all duration-500 flex items-center justify-center gap-2.5 group shadow-[0_0_20px_rgba(255,255,255,0.1)]"
             >
               VIEW MORE
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-500" />
@@ -145,7 +145,7 @@ const StrategiesDashboard: React.FC = () => {
   const strategies = strategiesJson as StrategyData[];
 
   return (
-    <div className="min-h-screen p-8 md:p-16">
+    <div className="min-h-screen px-4 py-12 sm:p-8 md:p-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {strategies.map((strategy, index) => (
