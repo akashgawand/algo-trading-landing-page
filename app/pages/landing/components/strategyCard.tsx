@@ -53,7 +53,7 @@ const StrategyCard: React.FC<{ data: StrategyData }> = ({ data }) => {
           <div className="relative z-10 w-full h-full flex flex-col">
             <div className="flex items-center justify-between mb-6 md:mb-10">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
                   <span className="text-white font-semibold text-lg tracking-wider">
                     {data.name.charAt(0)}
                   </span>

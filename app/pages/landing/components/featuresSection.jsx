@@ -271,7 +271,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                                     backgroundColor: '#0f1117',
                                                     border: '1px solid rgba(255,255,255,0.1)',
                                                     borderRadius: '12px',
-                                                    backdropFilter: 'blur(10px)'
+                                                    backdropFilter: 'blur(1px)'
                                                 }}
                                                 itemStyle={{ color: '#e5e7eb' }}
                                             />
@@ -295,7 +295,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                     </ResponsiveContainer>
 
                                     {/* Floating tooltip-like element overlay (decorative) */}
-                                    <div className="hidden sm:block absolute top-4 right-20 bg-[#0f1117]/90 border border-white/10 backdrop-blur-md rounded-xl p-3 shadow-2xl">
+                                    <div className="hidden sm:block absolute top-4 right-20 bg-[#0f1117]/90 border border-white/10 rounded-xl p-3 shadow-2xl">
                                         <p className="text-[10px] text-gray-500 mb-1">Jan 24, 2025</p>
                                         <div className="flex items-center gap-3 text-xs">
                                             <div className="flex items-center gap-1.5">

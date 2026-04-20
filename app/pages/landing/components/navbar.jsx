@@ -61,7 +61,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setMobileMenuOpen(false)}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[40] md:hidden"
+            className="fixed inset-0 bg-black/60 z-[40] md:hidden"
           />
         )}
       </AnimatePresence>
@@ -77,7 +77,7 @@ const Navbar = () => {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-colors duration-300 py-4",
           isScrolled
-            ? "bg-[#0a0613]/80 backdrop-blur-xl shadow-2xl shadow-black/20"
+            ? "bg-[#0a0613]/80 shadow-2xl shadow-black/20"
             : "bg-transparent"
         )}
       >
@@ -164,7 +164,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 w-full max-w-sm bg-[#0a0613]/98 backdrop-blur-2xl border-l border-white/10 shadow-2xl flex flex-col z-50 md:hidden"
+            className="fixed inset-y-0 right-0 w-full max-w-sm bg-[#0a0613]/98 border-l border-white/10 shadow-2xl flex flex-col z-50 md:hidden"
           >
             <div className="flex items-center justify-between px-6 py-5 border-b border-white/5">
                <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
