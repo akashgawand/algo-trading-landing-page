@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TestimonialsGrid = () => {
     return (
-        <div id="testimonials" className="min-h-screen bg-[#060613] p-8 relative overflow-hidden">
+        <div id="testimonials" className="min-h-screen bg-[#060613] px-4 py-8 sm:p-6 md:p-8 relative overflow-hidden">
             {/* TOP BLEND */}
             <div className="pointer-events-none absolute top-0 left-0 w-full h-32 z-[2] 
 bg-gradient-to-b from-[#0a0613] via-[#0a0613]/60 to-transparent" />
@@ -25,11 +25,11 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
     `,
                 }}
             />
-            <div className="text-center pt-10  mb-5">
+            <div className="text-center pt-6 sm:pt-8 md:pt-10 mb-5">
 
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-                    What Our Users Say<br />
-                    <span className="text-blue-200/80">Real Feedback from Real Traders</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 tracking-tight">
+                    What Our Users Say<br className="hidden sm:block" />
+                    <span className="text-blue-200/80"> Real Feedback from Real Traders</span>
                 </h2>
                 {/* <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                     Live results from AI-driven systems trading across stocks, futures, and forex markets with consistent execution.
@@ -37,10 +37,10 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 auto-rows-min">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-5 auto-rows-min">
 
                     {/* Left Column - Top Card with Image */}
-                    <div className="col-span-1 lg:col-span-3 lg:row-span-2 bg-white/[0.03] rounded-3xl p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative overflow-hidden group transition-all duration-500 hover:bg-white/[0.06]">
+                    <div className="col-span-1 sm:col-span-2 lg:col-span-3 lg:row-span-2 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative overflow-hidden group transition-all duration-500 hover:bg-white/[0.06]">
                         
                         <div className="flex gap-1 mb-3">
                             {[...Array(5)].map((_, i) => (
@@ -69,7 +69,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         </div>
                     </div>
 
-                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06]">
+                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06]">
                         <p className="text-gray-400 text-xs leading-relaxed mb-3">
                             The NikolAI Algorithm has been a game-changer for my portfolio. Consistent returns month after month with minimal drawdowns. The team at Gemalgo is professional and responsive.
                         </p>
@@ -81,7 +81,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Top Right - Fann Dofer Quote */}
-                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] group transition-all duration-500 hover:bg-white/[0.06]">
+                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] group transition-all duration-500 hover:bg-white/[0.06]">
                         <Quote className="w-8 h-8 text-blue-500/40 mb-3" />
                         <p className="text-gray-400 text-[11px] leading-relaxed mb-3">
                             Finally found an algorithm that actually works as advertised. The transparency with multiple accounts and real performance data builds trust.
@@ -102,8 +102,8 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Right Column - Incredible Service */}
-                    <div className="col-span-1 lg:col-span-3 lg:row-span-2 bg-white/[0.03] rounded-3xl overflow-hidden border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06]">
-                        <div className="p-5">
+                    <div className="col-span-1 lg:col-span-3 lg:row-span-2 bg-white/[0.03] rounded-3xl overflow-hidden border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06] sm:col-span-2 md:col-span-1 flex flex-col sm:flex-row lg:flex-col items-center lg:items-stretch">
+                        <div className="p-5 flex-1">
                             <p className="text-gray-400 text-xs mb-1">26 Mar 2029</p>
                             <h3 className="text-white text-xl font-bold mb-1">Incredible<br />service</h3>
                             <p className="text-gray-400 text-sm mb-3">Perfect, exceeded<br />expectations</p>
@@ -113,19 +113,19 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                 ))}
                             </div>
                         </div>
-                        <div className="h-40 w-full">
+                        <div className="h-40 w-full sm:w-40 lg:w-full shrink-0">
                             <Image
                                 src="/testimonial.png"
                                 alt="Customer service"
-                                width={100}
-                                height={100}
-                                className="w-full h-full object-cover rounded-2xl p-2"
+                                width={400}
+                                height={400}
+                                className="w-full h-full object-cover object-top rounded-2xl p-2"
                             />
                         </div>
                     </div>
 
                     {/* Center - Matthew Smith (Large) */}
-                    <div className="col-span-1 lg:col-span-4 lg:row-span-2 bg-white/[0.04] rounded-3xl p-6 border border-white/15 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.1),0_30px_60px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:bg-white/[0.08]">
+                    <div className="col-span-1 sm:col-span-2 lg:col-span-4 lg:row-span-2 bg-white/[0.04] rounded-3xl p-5 sm:p-6 border border-white/15 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.1),0_30px_60px_rgba(0,0,0,0.5)] relative group transition-all duration-500 hover:bg-white/[0.08]">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         <div className="absolute top-4 right-4">
                             <MoreHorizontal className="w-5 h-5 text-gray-500 cursor-pointer" />
@@ -150,7 +150,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Service Rating */}
-                    <div className="col-span-1 lg:col-span-2 bg-white/[0.03] rounded-3xl p-4 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05)] transition-all duration-500 hover:bg-white/[0.06]">
+                    <div className="col-span-1 sm:col-span-2 lg:col-span-2 bg-white/[0.03] rounded-3xl p-4 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05)] transition-all duration-500 hover:bg-white/[0.06]">
                         <div className="flex items-center gap-2 mb-2">
                             <span className="text-white font-bold text-lg">09+</span>
                             <div className="w-2 h-2 rounded-full bg-emerald-400" />
@@ -163,7 +163,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Bottom Left - Elizabeth Jones */}
-                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05)] group transition-all duration-500 hover:bg-white/[0.06]">
+                    <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05)] group transition-all duration-500 hover:bg-white/[0.06]">
                         <div className="flex gap-1 mb-3">
                             {[...Array(5)].map((_, i) => (
                                 <Star key={i} className="w-3 h-3 fill-emerald-400 text-emerald-400" />
@@ -189,7 +189,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Your Feedback */}
-                    <div className="col-span-1 lg:col-span-3 bg-white/[0.04] rounded-[2rem] p-5 border border-white/15 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.08]">
+                    <div className="col-span-1 lg:col-span-3 bg-white/[0.04] rounded-[2rem] p-4 sm:p-5 border border-white/15 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.08]">
                         <div className="flex items-center gap-2 mb-3">
                             <span className="text-gray-400 text-xs">Sarah Chen</span>
                             <span className="text-gray-600 text-xs">•</span>

@@ -151,11 +151,11 @@ const StrategyDrawer: React.FC<StrategyDrawerProps> = ({
       >
         {/* Header bar */}
         <div
-          className="flex items-center justify-between px-8 py-6"
+          className="flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6"
           style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
         >
           <div>
-            <h2 className="text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white tracking-tight">
               {parentName} — Variants
             </h2>
           </div>
@@ -169,7 +169,7 @@ const StrategyDrawer: React.FC<StrategyDrawerProps> = ({
 
         {/* Cards */}
         <div className="flex-1 overflow-y-auto px-4 sm:px-8 py-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {strategies.map((s, i) => (
               <MiniCard key={i} data={s} strategyId={parentName} index={i} />
             ))}
