@@ -53,7 +53,7 @@ const lineData = [
 
 export default function FeaturesSection() {
     return (
-        <section id="features" className="relative min-h-screen bg-[#060613] py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section id="features" className="relative min-h-screen bg-[#060613] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
             {/* Top-side shadow peak */}
             {/* <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-40 
 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.35),rgba(59,130,246,0.15)_40%,transparent_80%)] 
@@ -69,19 +69,19 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
 
             <div className="relative max-w-7xl mx-auto">
                 {/* Header */}
-                <div className="text-center mt-12 mb-16">
+                <div className="text-center mt-6 sm:mt-8 md:mt-12 mb-10 sm:mb-12 md:mb-16">
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-                        Discover the Features That Simplify<br />
-                        <span className="text-blue-200/80">and Empower Your Finances</span>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 tracking-tight">
+                        Discover the Features That Simplify<br className="hidden sm:block" />
+                        <span className="text-blue-200/80"> and Empower Your Finances</span>
                     </h2>
-                    <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                         Everything you need to manage, track, and grow your money — all in one intuitive platform
                     </p>
                 </div>
 
                 {/* Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
 
                     {/* Card 1: Smarter Tracking */}
                     <div className="group relative lg:col-span-1">
@@ -232,7 +232,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                     </div>
 
                     {/* Card 5: Visual Growth */}
-                    <div className="group relative md:col-span-2 lg:col-span-2">
+                    <div className="group relative sm:col-span-2 lg:col-span-2">
                         <div className="absolute -inset-0.5 bg-gradient-to-b from-blue-500/20 to-cyan-500/5 rounded-3xl  opacity-30 group-hover:opacity-50 transition duration-500" />
                         <div className="relative h-full bg-[#0a0a0f]/80  border border-white/[0.08] rounded-3xl p-6 overflow-hidden">
                             <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-blue-600/20 via-cyan-500/10 to-transparent " />
@@ -295,7 +295,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                     </ResponsiveContainer>
 
                                     {/* Floating tooltip-like element overlay (decorative) */}
-                                    <div className="absolute top-4 right-20 bg-[#0f1117]/90 border border-white/10 backdrop-blur-md rounded-xl p-3 shadow-2xl">
+                                    <div className="hidden sm:block absolute top-4 right-20 bg-[#0f1117]/90 border border-white/10 backdrop-blur-md rounded-xl p-3 shadow-2xl">
                                         <p className="text-[10px] text-gray-500 mb-1">Jan 24, 2025</p>
                                         <div className="flex items-center gap-3 text-xs">
                                             <div className="flex items-center gap-1.5">

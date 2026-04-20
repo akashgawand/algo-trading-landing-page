@@ -122,7 +122,7 @@ const StatCard = ({ label, value, sub, icon, positive, theme }) => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-            className="flex flex-col gap-1 rounded-[28px] px-7 py-6 shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden transition-all duration-500 cursor-default group"
+            className="flex flex-col gap-1 rounded-[24px] sm:rounded-[28px] px-5 sm:px-7 py-5 sm:py-6 shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden transition-all duration-500 cursor-default group"
             style={{
                 background: theme.card,
                 border: `1px solid ${theme.border}`,
@@ -133,25 +133,25 @@ const StatCard = ({ label, value, sub, icon, positive, theme }) => {
                 boxShadow: `0 20px 40px rgba(0,0,0,0.7), 0 0 25px ${theme.glow}`,
             }}
         >
-            <div className="flex items-start justify-between mb-4 min-h-[44px]">
+            <div className="flex items-start justify-between mb-3 sm:mb-4 min-h-[36px] sm:min-h-[44px]">
                 <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-black uppercase tracking-[0.25em] text-white/30 group-hover:text-white/50 transition-colors leading-relaxed pr-4">
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.25em] text-white/30 group-hover:text-white/50 transition-colors leading-relaxed pr-4">
                         {label}
                     </span>
                     <div className="h-[2px] w-4 rounded-full transition-all duration-500 group-hover:w-8" style={{ background: theme.accent }} />
                 </div>
-                <div className="p-2.5 rounded-2xl bg-white/[0.03] text-white/20 group-hover:bg-white/[0.08] group-hover:text-white/60 transition-all duration-500 border border-white/5 shrink-0 ml-2">
+                <div className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-white/[0.03] text-white/20 group-hover:bg-white/[0.08] group-hover:text-white/60 transition-all duration-500 border border-white/5 shrink-0 ml-2">
                     {icon}
                 </div>
             </div>
 
             <div className="flex flex-col">
-                <span className={`text-3xl text-white font-black tracking-tighter leading-none tabular-nums`} >
+                <span className={`text-xl sm:text-2xl lg:text-3xl text-white font-black tracking-tighter leading-none tabular-nums`} >
                     {value}
                 </span>
                 {sub && (
                     <div className="flex items-center gap-1.5 mt-3">
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-[6px] bg-white/5 border border-white/5" style={{ color: theme.mutedText }}>
+                        <span className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-[6px] bg-white/5 border border-white/5" style={{ color: theme.mutedText }}>
                             {sub}
                         </span>
                     </div>
@@ -291,56 +291,50 @@ const DashboardCockpit = () => {
     return (
         <div className="min-h-screen font-['Inter'] antialiased">
             {/* ── TOP NAV ───────────────────────────── */}
-            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-7 flex items-center justify-between h-[60px] shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-3 sm:px-6 md:px-7 flex flex-nowrap items-center justify-between min-h-[60px] h-auto py-3 lg:py-0 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
                 style={{ borderBottom: `1px solid ${theme.border}` }}>
 
-                <div className="flex items-center gap-5 group">
-                    <div className="relative">
-                        <div className="w-11 h-11 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-white/20 group-hover:bg-white/[0.05]">
-                            <h1 className="w-full h-full flex items-center justify-center text-xl font-black transition-all duration-500 group-hover:scale-110 leading-none select-none" style={{ color: theme.accent }}>
+                <div className="flex items-center gap-3 sm:gap-4 group">
+                    <div className="relative shrink-0">
+                        <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-lg sm:rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-white/20 group-hover:bg-white/[0.05]">
+                            <h1 className="text-xs sm:text-xl font-black transition-all duration-500 group-hover:scale-110 leading-none select-none" style={{ color: theme.accent }}>
                                 G
                             </h1>
                         </div>
-                        <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-[#05050f] shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                        <div className="absolute -bottom-0.5 -right-0.5 w-2.5 sm:w-3.5 h-2.5 sm:h-3.5 rounded-full bg-emerald-500 border-2 border-[#05050f] shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
                     </div>
                     <div className="flex flex-col gap-0.5">
-                        <div className="flex items-center gap-2">
-                            <h1 className="text-[15px] font-black text-white tracking-tighter uppercase leading-none">
-                                GEMALGO <span className="text-white/40">PROCESSOR</span>
+                        <div className="flex items-center gap-1.5 sm:gap-2">
+                            <h1 className="text-[14px] sm:text-[15px] font-black text-white tracking-tighter uppercase leading-none">
+                                GEMALGO <span className="text-white/40 hidden sm:inline">PROCESSOR</span>
                             </h1>
-                            <div className="px-1.5 py-0.5 rounded-[4px] bg-white/[0.05] border border-white/5 text-[8px] font-mono text-white/30 tracking-widest leading-none">
-                                v2.0
-                            </div>
                         </div>
-                        <div className="flex items-center gap-2">
-                            <div className="w-8 h-[2px] rounded-full bg-white/5" />
-                            <span className="text-[9px] text-white/20 uppercase tracking-[0.3em] font-black leading-none group-hover:text-white/40 transition-colors">
-                                Institutional Core
-                            </span>
-                        </div>
+                        <span className="text-[8px] sm:text-[9px] text-white/10 uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black leading-none group-hover:text-white/20 transition-colors hidden xs:block">
+                            Institutional Core
+                        </span>
                     </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 p-1 rounded-[14px] border bg-[#12131a]" style={{ borderColor: theme.border }}>
+                <div className="flex items-center gap-0.5 p-1 rounded-xl border bg-[#12131a] overflow-x-auto no-scrollbar scroll-smooth" style={{ borderColor: theme.border }}>
                     {STRATEGIES.map((s) => (
                         <button
                             key={s.id}
                             onClick={() => handleStrategyChange(s.id)}
-                            className={`px-5 py-2 rounded-xl text-xs font-black cursor-pointer transition-all duration-500 outline-none flex items-center gap-2.5 relative group ${strategy === s.id ? "text-white" : "text-white/30 hover:text-white/60"
+                            className={`px-3 sm:px-5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-black cursor-pointer transition-all duration-300 outline-none flex items-center gap-2 relative shrink-0 ${strategy === s.id ? "text-white" : "text-white/20 hover:text-white/60"
                                 }`}
                         >
                             {strategy === s.id && (
                                 <motion.div
                                     layoutId="nav-pill"
-                                    className="absolute inset-0 rounded-xl bg-white/[0.05] border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.3)]"
+                                    className="absolute inset-0 rounded-lg sm:rounded-xl bg-white/[0.06] border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
                                     style={{ background: theme.card }}
-                                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                    transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
                                 />
                             )}
-                            <div className={`w-1.5 h-1.5 rounded-full transition-all duration-500 relative z-10`}
+                            <div className={`w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full transition-all duration-300 relative z-10`}
                                 style={{
                                     background: strategy === s.id ? theme.accent : 'currentColor',
-                                    boxShadow: strategy === s.id ? `0 0 10px ${theme.accent}` : 'none'
+                                    boxShadow: strategy === s.id ? `0 0 8px ${theme.accent}` : 'none'
                                 }} />
                             <span className="relative z-10 tracking-widest uppercase">{s.label}</span>
                         </button>
@@ -361,13 +355,13 @@ const DashboardCockpit = () => {
                 </div> */}
             </nav>
 
-            <main className="px-7 py-8 max-w-[1440px] mx-auto">
+            <main className="px-4 sm:px-6 md:px-7 py-8 max-w-[1440px] mx-auto">
 
                 {/* ── UNIFIED FILTER BAR ───────────────── */}
-                <div className="mb-10 flex items-center justify-between flex-wrap gap-5">
-                    <div className="flex items-center gap-3 bg-white/[0.02] p-1.5 rounded-2xl border border-white/5 shadow-inner" style={{ borderColor: theme.border }}>
-                        <div className="px-3 py-1 text-[9px] font-black text-white/20 uppercase tracking-[0.2em] border-r border-white/5 mr-1">Capital Tier</div>
-                        <div className="flex gap-1.5">
+                <div className="mb-6 lg:mb-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 sm:gap-5">
+                    <div className="flex items-center gap-2 bg-white/[0.02] p-1 rounded-2xl border border-white/5 shadow-inner overflow-x-auto no-scrollbar" style={{ borderColor: theme.border }}>
+                        <div className="px-2.5 py-1 text-[8px] font-black text-white/10 uppercase tracking-[0.2em] border-r border-white/5 mr-1 shrink-0 hidden xs:block">Tier</div>
+                        <div className="flex gap-1 min-w-0">
                             {accounts.map((acct, idx) => {
                                 const label = `$${Number(acct.summary.initialInvestment).toLocaleString("en-US", { notation: "compact", maximumFractionDigits: 1 })}`;
                                 const isActive = idx === accountIndex;
@@ -375,7 +369,7 @@ const DashboardCockpit = () => {
                                     <button
                                         key={idx}
                                         onClick={() => handleAccountChange(idx)}
-                                        className={`px-5 py-2 rounded-xl text-xs font-black cursor-pointer transition-all duration-500 outline-none flex items-center gap-2 relative ${isActive ? "text-white" : "text-white/40 hover:text-white/70"
+                                        className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-black cursor-pointer transition-all duration-500 outline-none flex items-center gap-2 relative shrink-0 ${isActive ? "text-white" : "text-white/20 hover:text-white/70"
                                             }`}
                                     >
                                         {isActive && (
@@ -386,25 +380,25 @@ const DashboardCockpit = () => {
                                             />
                                         )}
                                         <span className="relative z-10">{label}</span>
-                                        {idx === 0 && <span className="relative z-10 px-1.5 py-0.5 rounded-[4px] bg-white/10 text-[8px] uppercase tracking-tighter text-white/60">Primary</span>}
+                                        {idx === 0 && <span className="relative z-10 px-1 py-0.5 rounded-[4px] bg-white/10 text-[7px] uppercase tracking-tighter text-white/40 hidden xs:inline">Pri</span>}
                                     </button>
                                 );
                             })}
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-6">
-                        <div className="flex flex-col items-end border-r pr-6 border-white/5" style={{ borderColor: theme.border }}>
-                            <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold mb-1">Audit Status</span>
-                            <div className="flex items-center gap-1.5 text-emerald-400 text-[11px] font-black uppercase tracking-widest bg-emerald-500/10 px-3 py-1.5 rounded-xl border border-emerald-500/20 shadow-[0_0_15px_rgba(52,211,153,0.1)]">
-                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                                Verified & Live
+                    <div className="flex items-center justify-between sm:justify-end gap-3 sm:gap-8 bg-white/[0.02] sm:bg-transparent p-3 sm:p-0 rounded-2xl border border-white/5 sm:border-0" style={{ borderColor: theme.border }}>
+                        <div className="flex items-center gap-2.5 sm:border-r sm:pr-8 border-white/5" style={{ borderColor: theme.border }}>
+                            <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse hidden xs:block" />
+                            <div className="flex flex-col sm:items-end">
+                                <span className="text-[8px] uppercase tracking-widest text-white/20 font-bold mb-0.5">Audit Status</span>
+                                <span className="text-emerald-400 text-[10px] font-black uppercase tracking-widest">Verified & Live</span>
                             </div>
                         </div>
-                        <div className="flex flex-col items-end">
-                            <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold mb-1">Audit Period</span>
-                            <div className="flex items-center gap-2 text-white/80 font-mono text-sm font-semibold">
-                                <Calendar className="w-3.5 h-3.5 text-blue-400" />
+                        <div className="flex flex-col sm:items-end">
+                            <span className="text-[8px] uppercase tracking-widest text-white/20 font-bold mb-0.5">Audit Period</span>
+                            <div className="flex items-center gap-1.5 text-white/60 font-mono text-[10px] sm:text-sm font-semibold">
+                                <Calendar className="w-2.5 h-2.5 text-blue-400/50" />
                                 {summary?.period}
                             </div>
                         </div>
@@ -433,9 +427,9 @@ const DashboardCockpit = () => {
 
                         {/* ── EQUITY CURVE ─────────────────────── */}
                         <div className="mb-5">
-                            <GlassCard theme={theme}>
+                            <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
                                 <SectionHeader title="Portfolio Equity Curve" theme={theme} />
-                                <div className="h-[300px] w-full mt-2">
+                                <div className="h-[240px] sm:h-[300px] w-full mt-2">
                                     <ResponsiveContainer width="100%" height="100%">
                                         <AreaChart data={chartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
                                             <defs>
@@ -471,11 +465,11 @@ const DashboardCockpit = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
 
                             {/* Monthly Returns Bar Chart */}
-                            <GlassCard theme={theme}>
+                            <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
                                 <SectionHeader title="Monthly Returns" theme={theme} />
-                                <div className="h-[240px] w-full mt-2">
+                                <div className="h-[200px] sm:h-[240px] w-full mt-2">
                                     <ResponsiveContainer width="100%" height="100%">
-                                        <BarChart data={chartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }} barCategoryGap="35%">
+                                        <BarChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }} barCategoryGap="35%">
                                             <CartesianGrid stroke={theme.gridColor} strokeDasharray="3 3" vertical={false} />
                                             <XAxis dataKey="month" tick={axisStyle} axisLine={false} tickLine={false} interval="preserveStartEnd" />
                                             <YAxis
@@ -499,11 +493,11 @@ const DashboardCockpit = () => {
                             </GlassCard>
 
                             {/* Drawdown Area Chart */}
-                            <GlassCard theme={theme}>
+                            <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
                                 <SectionHeader title="Drawdown Analysis" theme={theme} />
-                                <div className="h-[240px] w-full mt-4">
+                                <div className="h-[200px] sm:h-[240px] w-full mt-4">
                                     <ResponsiveContainer width="100%" height="100%">
-                                        <AreaChart data={drawdownData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
+                                        <AreaChart data={drawdownData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                                             <defs>
                                                 <linearGradient id={`ddGrad-${strategy}`} x1="0" y1="0" x2="0" y2="1">
                                                     <stop offset="0%" stopColor={theme.negative} stopOpacity={0.3} />
@@ -535,14 +529,14 @@ const DashboardCockpit = () => {
                             </GlassCard>
                         </div>
 
-                        <GlassCard theme={theme} className="mt-5">
+                        <GlassCard theme={theme} className="mt-5 px-4 sm:px-8 py-5 sm:py-7">
                             <SectionHeader title="Monthly Performance Breakdown" theme={theme} />
-                            <div className="overflow-x-auto min-h-[400px]">
+                            <div className="overflow-x-auto min-h-[350px] sm:min-h-[400px]">
                                 <table className="w-full border-collapse text-[12px]">
                                     <thead>
                                         <tr className="border-b" style={{ borderBottomColor: theme.border }}>
                                             {["Month", "Return %", "Profit / Loss", "Portfolio Value"].map((h) => (
-                                                <th key={h} className={`py-3 px-3.5 text-white/35 font-semibold text-[10px] uppercase tracking-widest whitespace-nowrap ${h === "Month" ? "text-left" : "text-right"
+                                                <th key={h} className={`py-3 px-2 sm:px-3.5 text-white/35 font-semibold text-[9px] sm:text-[10px] uppercase tracking-widest whitespace-nowrap ${h === "Month" ? "text-left" : "text-right"
                                                     }`}>{h}</th>
                                             ))}
                                         </tr>
@@ -558,14 +552,14 @@ const DashboardCockpit = () => {
                                                     transition={{ delay: i * 0.03 }}
                                                     className="transition-colors duration-150 hover:bg-white/[0.025]"
                                                 >
-                                                    <td className="py-3 px-3.5 text-white/70 font-medium">{row.month}</td>
-                                                    <td className={`py-3 px-3.5 text-right font-bold tabular-nums`} style={{ color: pos ? theme.positive : theme.negative }}>
+                                                    <td className="py-3 px-2 sm:px-3.5 text-white/70 font-medium">{row.month}</td>
+                                                    <td className={`py-3 px-2 sm:px-3.5 text-right font-bold tabular-nums`} style={{ color: pos ? theme.positive : theme.negative }}>
                                                         {pos ? "+" : ""}{row.returnPercent.toFixed(2)}%
                                                     </td>
-                                                    <td className="py-3 px-3.5 text-right tabular-nums" style={{ color: pos ? theme.positive : theme.negative }}>
+                                                    <td className="py-3 px-2 sm:px-3.5 text-right tabular-nums" style={{ color: pos ? theme.positive : theme.negative }}>
                                                         {pos ? "+" : ""}{fmt.currency(row.profit)}
                                                     </td>
-                                                    <td className="py-3 px-3.5 text-right text-white/65 tabular-nums">
+                                                    <td className="py-3 px-2 sm:px-3.5 text-right text-white/65 tabular-nums">
                                                         {fmt.currency(row.value)}
                                                     </td>
                                                 </motion.tr>
@@ -578,8 +572,8 @@ const DashboardCockpit = () => {
                             {/* Pagination Controls */}
                             {tableData.total > rowsPerPage && (
                                 <div className="mt-6 flex items-center justify-between border-t pt-5" style={{ borderTopColor: theme.border }}>
-                                    <span className="text-[11px] text-white/30 font-medium uppercase tracking-wider">
-                                        Showing {Math.min(tableData.total, (currentPage - 1) * rowsPerPage + 1)}-{Math.min(tableData.total, currentPage * rowsPerPage)} of {tableData.total}
+                                    <span className="text-[9px] sm:text-[11px] text-white/30 font-medium uppercase tracking-wider">
+                                        {Math.min(tableData.total, (currentPage - 1) * rowsPerPage + 1)}-{Math.min(tableData.total, currentPage * rowsPerPage)} of {tableData.total}
                                     </span>
                                     <div className="flex items-center gap-1.5">
                                         <button
@@ -594,7 +588,7 @@ const DashboardCockpit = () => {
                                             <button
                                                 key={i}
                                                 onClick={() => setCurrentPage(i + 1)}
-                                                className={`w-8 h-8 rounded-lg text-[11px] fonFstatet-bold transition-all cursor-pointer ${currentPage === i + 1
+                                                className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-[10px] sm:text-[11px] font-bold transition-all cursor-pointer ${currentPage === i + 1
                                                     ? "bg-white text-black shadow-lg"
                                                     : "border border-white/10 bg-white/5 text-white/40 hover:bg-white/10 hover:text-white"
                                                     }`}

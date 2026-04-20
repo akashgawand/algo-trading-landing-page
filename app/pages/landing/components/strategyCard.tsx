@@ -145,9 +145,9 @@ const StrategiesDashboard: React.FC = () => {
   const strategies = strategiesJson as StrategyData[];
 
   return (
-    <div className="min-h-screen px-4 py-12 sm:p-8 md:p-16">
+    <div className="min-h-screen px-4 py-8 sm:px-6 sm:py-10 md:p-16">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {strategies.map((strategy, index) => (
             <StrategyCard key={index} data={strategy} />
           ))}
