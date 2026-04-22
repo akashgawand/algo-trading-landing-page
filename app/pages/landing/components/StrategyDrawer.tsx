@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { X, TrendingUp, Calendar, Wallet, Target, ArrowUpRight } from "lucide-react";
 
 interface StrategyData {
@@ -130,6 +130,17 @@ const StrategyDrawer: React.FC<StrategyDrawerProps> = ({
   isOpen,
   onClose,
 }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("strategy-drawer-open");
+    } else {
+      document.body.classList.remove("strategy-drawer-open");
+    }
+    return () => {
+      document.body.classList.remove("strategy-drawer-open");
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
