@@ -168,7 +168,7 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
         {/* Avatar & Title Row */}
         <div className="flex items-start gap-4 mb-4">
           <div className="relative shrink-0">
-            <div className={`w-14 h-14 rounded-full border-2 ${isPlaying ? 'border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.3)] animate-pulse' : 'border-blue-500'} bg-[#0B1221] flex items-center justify-center overflow-hidden`}>
+            <div className={`w-14 h-14 rounded-full border-2 ${isPlaying ? 'border-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.4)] animate-pulse' : 'border-blue-600'} bg-[#0B1221] flex items-center justify-center overflow-hidden`}>
                <img src="/sean.jpg" alt="Sean" className="w-full h-full object-cover" />
             </div>
           </div>
@@ -230,8 +230,8 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
               onClick={handlePlayPause}
               className={`w-12 h-10 flex items-center justify-center rounded-lg text-white transition-all duration-300 shadow-lg ${
                 isExpanded 
-                  ? 'bg-amber-500 hover:bg-amber-400 shadow-amber-500/20' 
-                  : 'bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 shadow-purple-500/20'
+                  ? 'bg-blue-600 hover:bg-blue-500 shadow-blue-500/20' 
+                  : 'bg-blue-600 hover:bg-blue-500 shadow-blue-500/20'
               }`}
             >
               {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-1" />}
@@ -264,12 +264,12 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
                   onClick={() => handleSectionChange(section.id)}
                   className={`flex flex-col items-center justify-center py-2 px-2 rounded-lg border transition-all duration-200 ${
                     currentSection === section.id
-                      ? 'bg-amber-500 border-amber-500 text-white'
-                      : 'bg-white border-white text-slate-800 hover:bg-gray-100'
+                      ? 'bg-blue-600 border-blue-500 text-white'
+                      : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
                   }`}
                 >
-                  <span className={`text-xs font-bold ${currentSection === section.id ? 'text-white' : 'text-slate-800'}`}>{section.title}</span>
-                  <span className={`text-[10px] ${currentSection === section.id ? 'text-amber-100' : 'text-slate-400'}`}>{section.duration}</span>
+                  <span className={`text-xs font-bold ${currentSection === section.id ? 'text-white' : 'text-slate-300'}`}>{section.title}</span>
+                  <span className={`text-[10px] ${currentSection === section.id ? 'text-blue-200' : 'text-slate-500'}`}>{section.duration}</span>
                 </button>
               ))}
             </div>
