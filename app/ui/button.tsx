@@ -38,9 +38,10 @@ function Button({
   const combinedClassName = cn(baseStyles, variantStyles[variant], sizeStyles[size], className);
 
   if (asChild && React.isValidElement(children)) {
-    return React.cloneElement(children, {
-      ...children.props,
-      className: cn(combinedClassName, children.props.className),
+    const child = children as React.ReactElement<any>;
+    return React.cloneElement(child, {
+      ...child.props,
+      className: cn(combinedClassName, child.props.className),
     } as any);
   }
 
