@@ -391,7 +391,7 @@ export default function HeroSaaS() {
           <div className="absolute -top-px left-1/2 -translate-x-1/2 w-4/5 h-px bg-gradient-to-r from-transparent via-blue-300/40 to-transparent opacity-90 shadow-[0_0_15px_rgba(147,197,253,0.5)]" />
 
           {/* Main Dashboard Container */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#020617]/70 p-2 backdrop-blur-xl shadow-[0_20px_80px_rgba(0,0,0,0.8),0_0_40px_rgba(59,130,246,0.1),inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#020617]/70 p-2 shadow-[0_20px_80px_rgba(0,0,0,0.8),0_0_40px_rgba(59,130,246,0.1),inset_0_1px_0_rgba(255,255,255,0.05)]">
             {/* Top Sheen Reflection on the glass */}
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-blue-400/5 to-transparent pointer-events-none" />
             {/* Inner Dashboard Layout Mockup */}

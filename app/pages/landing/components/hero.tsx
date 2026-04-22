@@ -44,7 +44,7 @@ export default function HeroSaaS() {
   const translateY = useTransform(progress, [0, 1], [40, 0]); // 40px → 0 (Pulling start position up to fill gap)
   const opacity = useTransform(progress, [0, 1], [0.3, 1]); // 0.3 → 1
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center md:block overflow-hidden bg-[#020617] font-sans text-white antialiased md:pb-32 md:pt-40">
+    <section className="relative w-full min-h-screen flex flex-col justify-center md:block overflow-hidden bg-[#020617] font-sans text-white antialiased pt-24 pb-16 sm:pt-28 sm:pb-20 md:pb-32 md:pt-40">
       {/* GRID OVERLAY — fades toward edges, lives in the glow zone */}
       <div
         className="pointer-events-none absolute inset-0 z-[1]"
@@ -71,14 +71,14 @@ export default function HeroSaaS() {
       />
      
 
-      <div className="container relative z-10 mx-auto max-w-7xl px-4 text-center md:px-6">
+      <div className="container relative z-10 mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-6">
         {/* =========================================
             HERO CONTENT
             ========================================= */}
         <div
           className="relative z-20 transform-gpu will-change-transform" // <-- Added here
         >
-          <div className="absolute left-[-20%] top-[30%] w-[400px] h-[400px] opacity-30">
+          <div className="absolute left-[-20%] top-[30%] w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] opacity-30">
             <div
               className="w-full h-full rounded-full"
               // style={{
@@ -90,26 +90,26 @@ export default function HeroSaaS() {
 
           
 
-          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1.5 text-xs font-medium tracking-wide text-blue-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
+          <span className="mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1.5 text-[10px] sm:text-xs font-medium tracking-wide text-blue-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,1)]" />
             NEXT GENERATION OF TRADING
           </span>
 
-          <h1 className="mx-auto mb-6 max-w-4xl font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">
-            Trade Smarter with <br className="hidden md:block" />
+          <h1 className="mx-auto mb-4 sm:mb-6 max-w-4xl font-sans text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">
+            Trade Smarter with <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               AI-Powered
             </span>{" "}
             Strategy
           </h1>
 
-          <p className="mx-auto mb-10 max-w-2xl text-lg tracking-wide text-slate-400 md:text-xl">
+          <p className="mx-auto mb-8 sm:mb-10 max-w-2xl text-sm sm:text-base md:text-lg tracking-wide text-slate-400 lg:text-xl px-2 sm:px-0">
             Gemalgo combines artificial intelligence with cutting-edge trading
             strategies to help you maximize your investments with precision and
             ease.
           </p>
 
-          <div className="mb-10 flex flex-col items-center justify-center gap-4 sm:flex-row z-30 relative">
+          <div className="mb-8 sm:mb-10 flex flex-col items-center justify-center gap-4 sm:flex-row z-30 relative px-4 sm:px-0">
             <a
               href="https://go.gemalgo.ai/video-1"
               className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_30px_rgba(59,130,246,0.3),inset_0_1px_1px_rgba(255,255,255,0.3)] transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.5),inset_0_1px_1px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 sm:w-auto"
