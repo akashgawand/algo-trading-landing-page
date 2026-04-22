@@ -180,11 +180,11 @@ const Navbar = () => {
               </button>
             </div>
 
-            <div className="flex-1 px-6 py-12 flex flex-col gap-10 overflow-y-auto">
+            <div className="flex-1 px-5 py-8 flex flex-col gap-8 overflow-y-auto">
               {/* Navigation Section */}
               <div className="flex flex-col gap-8">
-                 <p className="text-[11px] font-bold text-blue-500 uppercase tracking-[0.3em] mb-2 px-1">Navigation</p>
-                <div className="flex flex-col gap-7">
+                <p className="text-[11px] font-bold text-blue-500 uppercase tracking-[0.3em] mb-2 px-1">Navigation</p>
+                <div className="flex flex-col gap-5">
                   {navLinks.map((link, idx) => (
                     <motion.div
                       key={link.name}
@@ -200,7 +200,7 @@ const Navbar = () => {
                       <Link
                         href={link.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className="text-4xl font-bold text-white hover:text-blue-500 transition-colors block tracking-tight"
+                        className="text-2xl font-bold text-white hover:text-blue-500 transition-colors block tracking-tight"
                       >
                         {link.name}
                       </Link>
@@ -218,19 +218,19 @@ const Navbar = () => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="flex flex-col gap-8"
+                  className="flex flex-col gap-6"
                 >
                   <Link 
                     href="/dashboard?strategy=nikolai&account=0" 
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-3xl font-bold text-white hover:text-white transition-colors"
+                    className="text-xl font-bold text-white hover:text-white transition-colors"
                   >
                     Dashboard
                   </Link>
-                  <Button className="bg-blue-600 hover:bg-blue-500 text-white w-full h-16 text-2xl font-bold rounded-[2rem] shadow-xl shadow-blue-500/20 group mt-2">
+                  <Button className="bg-blue-600 hover:bg-blue-500 text-white w-full h-12 text-lg font-bold rounded-[2rem] shadow-xl shadow-blue-500/20 group mt-2">
                     <Link href="https://go.gemalgo.ai/video-1" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-full">
                       Get Started
-                      <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </motion.div>

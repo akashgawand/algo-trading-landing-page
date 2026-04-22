@@ -4,6 +4,7 @@ import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, Maximize2, Minimi
 
 interface AISpokespersonProps {
   onClose?: () => void;
+  isMobile?: boolean;
 }
 
 const voiceOverScript = {
@@ -53,7 +54,7 @@ Whether it's 28 months, 19 months, or 9 months - whether it's $800,000, $75,000,
   }
 };
 
-export function AISpokesperson({ onClose }: AISpokespersonProps) {
+export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentSection, setCurrentSection] = useState<'homePage' | 'account800k' | 'account50k' | 'account75k' | 'closing'>('homePage');
@@ -143,7 +144,7 @@ export function AISpokesperson({ onClose }: AISpokespersonProps) {
   };
 
   return (
-    <div className={`flex flex-col bg-[#0f1117] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? 'w-[360px] sm:w-[400px]' : 'w-[320px] sm:w-[360px]'}`}>
+    <div className={`flex flex-col bg-[#0f1117] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ease-in-out ${isMobile ? 'w-[calc(100vw-3rem)] max-w-sm' : isExpanded ? 'w-[360px] sm:w-[400px]' : 'w-[320px] sm:w-[360px]'}`}>
       
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-white/5">
