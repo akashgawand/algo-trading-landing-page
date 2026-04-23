@@ -44,7 +44,7 @@ export default function HeroSaaS() {
   const translateY = useTransform(progress, [0, 1], [40, 0]); // 40px → 0 (Pulling start position up to fill gap)
   const opacity = useTransform(progress, [0, 1], [0.3, 1]); // 0.3 → 1
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center md:block overflow-hidden bg-[#020617] font-sans text-white antialiased pt-24 pb-16 sm:pt-28 sm:pb-20 md:pb-32 md:pt-40">
+    <section className="relative w-full min-h-[60vh] md:min-h-screen flex flex-col justify-center md:block overflow-hidden bg-[#020617] font-sans text-white antialiased pt-24 pb-8 sm:pt-28 sm:pb-12 md:pb-32 md:pt-40">
       {/* GRID OVERLAY — fades toward edges, lives in the glow zone */}
       <div
         className="pointer-events-none absolute inset-0 z-[1]"
@@ -104,7 +104,7 @@ export default function HeroSaaS() {
           </h1>
 
           <p className="mx-auto mb-8 sm:mb-10 max-w-2xl text-sm sm:text-base md:text-lg tracking-wide text-slate-400 lg:text-xl px-2 sm:px-0">
-            Gemalgo combines artificial intelligence with cutting-edge trading
+            Gemalgo combines artificial intelligence with cutting edge trading
             strategies to help you maximize your investments with precision and
             ease.
           </p>
@@ -222,6 +222,49 @@ export default function HeroSaaS() {
           </div>
         </motion.div>
       </div>
+
+      {/* <div className="mt-16 sm:mt-24 w-full flex flex-col items-center">
+        <p className="mb-4 text-sm sm:text-base font-medium tracking-widest text-slate-400 uppercase text-center px-4">
+          Trade On Trusted US Regulated Brokers
+        </p>
+        <div className="w-full overflow-hidden relative py-8 border-y border-white/5 bg-white/[0.01]">
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#020617] to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#020617] to-transparent z-10" />
+        <motion.div
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 40,
+          }}
+          className="flex w-fit whitespace-nowrap items-center"
+        >
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="flex items-center gap-12 sm:gap-20 px-6 sm:px-10">
+              {[
+                "Forex.com",
+                "Interactive Brokers",
+                "Alpaca",
+                "E*TRADE",
+                "NinjaTrader",
+                "Robinhood",
+                "StoneX",
+                "tastytrade",
+                "TradeStation",
+                "Webull",
+              ].map((name, idx) => (
+                <span
+                  key={idx}
+                  className="text-lg sm:text-xl font-bold text-slate-500 uppercase tracking-widest hover:text-blue-400 transition-colors duration-300"
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          ))}
+        </motion.div>
+      </div>
+      </div> */}
     </section>
   );
 }

@@ -271,7 +271,7 @@ export default function HeroSaaS() {
           </h1>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg tracking-wide text-slate-400 md:text-xl">
-            Gemalgo combines artificial intelligence with cutting-edge trading
+            Gemalgo combines artificial intelligence with cutting edge trading
             strategies to help you maximize your investments with precision and
             ease.
           </p>

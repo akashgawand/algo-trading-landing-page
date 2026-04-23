@@ -73,7 +73,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         <span className="text-xl sm:text-2xl md:text-3xl lg:text-5xl text-gray-400">Advanced Algorithmic Trading</span>
                     </h1>
                     <p className="mx-auto max-w-2xl text-sm sm:text-base md:text-lg text-slate-400">
-                        Bridging the gap between institutional-grade automation and the individual investor through sophisticated AI-driven execution.
+                        Bridging the gap between institutional grade automation and the individual investor through sophisticated AI driven execution.
                     </p>
                 </motion.div>
 
@@ -94,8 +94,8 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </h3>
                             <div className="space-y-6 sm:space-y-8 text-slate-400 leading-relaxed text-base sm:text-lg">
                                 <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
-                                    Gemalgo is a cutting-edge algorithmic trading platform that leverages the power of artificial intelligence through the <span className="text-blue-100 font-semibold underline decoration-blue-500/50 underline-offset-4">NikolAI Algorithm</span>. 
-                                    We provide institutional-grade trading automation designed for conservative investors seeking consistent, reliable returns.
+                                    Gemalgo is a cutting edge algorithmic trading platform that leverages the power of artificial intelligence through the <span className="text-blue-100 font-semibold underline decoration-blue-500/50 underline-offset-4">NikolAI Algorithm</span>. 
+                                    We provide institutional grade trading automation designed for conservative investors seeking consistent, reliable returns.
                                 </p>
                                 <div className="relative p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-[2rem] bg-gradient-to-br from-white/[0.03] to-transparent border border-white/[0.05]  overflow-hidden group-hover:border-blue-500/20 transition-all duration-500">
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5  rounded-full" />
@@ -121,7 +121,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                     <BarChart3 className="w-8 h-8 text-blue-500/50" />
                                 </div>
                                 <p className="text-slate-400 mb-6 sm:mb-8 md:mb-10 leading-relaxed text-sm sm:text-base italic border-l-2 border-white/5 pl-4 sm:pl-6">
-                                    &quot;From long-term performance to recent monthly gains, our data demonstrates the structural strength and algorithmic reliability of Gemalgo.&quot;
+                                    &quot;From long term performance to recent monthly gains, our data demonstrates the structural strength and algorithmic reliability of Gemalgo.&quot;
                                 </p>
                                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                                     <a href="https://gemalgo.trade" target="_blank" rel="noopener noreferrer" className="group/btn relative inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white text-black font-bold text-sm transition-all hover:bg-blue-50 hover:scale-[1.02] active:scale-95">
@@ -135,6 +135,8 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </div>
                         </motion.div>
                     </div>
+
+                    
 
                     {/* Features Sidebar Column */}
                     <div className="lg:col-span-5 space-y-10">
@@ -181,6 +183,9 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </div>
                         </motion.div>
                     </div>
+                </div>
+                <div className="w-full mx-auto my-10 rounded-lg overflow-hidden">
+                    <Image alt="sean image" src={"/seanfull.webp"} width={1920} height={1080} className="w-full h-auto object-cover" />
                 </div>
 
                 {/* Institutional Compliance & Risk Section */}
@@ -257,13 +262,14 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         {/* Search Indexing & Meta Data (Ultra-Subtle) */}
                         <div className="mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 border-t border-white/5 flex flex-wrap justify-center gap-x-4 sm:gap-x-8 gap-y-3">
                             {["Gemalgo Intelligence", "NikolAI Execution", "Automated Compliance", "Risk Architecture", "Institutional Terminal"].map((keyword, i) => (
-                                <span key={i} className="text-[10px] text-slate-800 font-medium tracking-widest uppercase hover:text-slate-700 transition-colors cursor-default">
+                                <span key={i} className="text-[10px] text-slate-500 font-medium tracking-widest uppercase hover:text-slate-700 transition-colors cursor-default">
                                     {keyword}
                                 </span>
                             ))}
                         </div>
                     </motion.div>
                 </div>
+            
             </div>
 
             {/* Bottom Glow Decoration */}

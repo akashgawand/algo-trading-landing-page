@@ -71,7 +71,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
 
                     <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06]">
                         <p className="text-gray-400 text-xs leading-relaxed mb-3">
-                            The NikolAI Algorithm has been a game-changer for my portfolio. Consistent returns month after month with minimal drawdowns. The team at Gemalgo is professional and responsive.
+                            The NikolAI Algorithm has been a game changer for my portfolio. Consistent returns month after month with minimal drawdowns. The team at Gemalgo is professional and responsive.
                         </p>
                         <div className="flex items-center gap-2 ">
                              <span className="text-emerald-400 text-[10px] font-bold">SC</span>
@@ -170,7 +170,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             ))}
                         </div>
                         <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                            The performance has exceeded my expectations. Conservative, consistent, and proven - exactly what they promise. Great communication and support from the Gemalgo team.
+                            The performance has exceeded my expectations. Conservative, consistent, and proven  exactly what they promise. Great communication and support from the Gemalgo team.
                         </p>
                         <div className="flex items-center justify-between">
                             <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-[10px] rounded-full border border-blue-500/20 font-medium">

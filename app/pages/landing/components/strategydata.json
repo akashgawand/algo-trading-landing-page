@@ -41,7 +41,7 @@
       {
         "name": "Orion ",
         "type": "Stocks",
-        "initialInvestment": "$120,000",
+        "initialInvestment": "$100,000",
         "startDate": "June 2020",
         "currentValue": "$810,480",
         "totalReturn": "+$690,480",

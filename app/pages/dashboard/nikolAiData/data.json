@@ -4,190 +4,190 @@
         "name": "NikolAI",
         "type": "EUR / USD",
         "summary": {
-            "initialInvestment": 800000.0,
-            "currentValue": 2398226,
-            "totalReturn": 1598226,
-            "returnPercent": 199.78,
+            "initialInvestment": 800000,
+            "currentValue": 2339047,
+            "totalReturn": 1539047,
+            "returnPercent": 192.38,
             "months": 28,
-            "successRate": 100.0,
+            "successRate": 100,
             "positiveMonths": 28,
             "avgMonthlyPercent": 3.87,
             "period": "August 2023 - Apr 2026"
         },
         "metrics": {
-            "sharpeRatio": 3.21,
-            "maxDrawdown": 8.85,
-            "totalTrades": 3584,
-            "tickersTraded": 76
+            "sharpeRatio": 2.69,
+            "maxDrawdown": 6.85,
+            "totalTrades": 4014,
+            "tickersTraded": 118
         },
         "monthlyHistory": [
             {
                 "month": "Nov 2025",
-                "returnPercent": 0.94,
-                "profit": 22344.91,
-                "value": 2398225.89
+                "returnPercent": 1.08,
+                "profit": 25067.84,
+                "value": 2339047.38
             },
             {
                 "month": "Oct 2025",
-                "returnPercent": 1.37,
-                "profit": 31999.07,
-                "value": 2375880.98
+                "returnPercent": 5.91,
+                "profit": 129178.92,
+                "value": 2313979.54
             },
             {
                 "month": "Sep 2025",
-                "returnPercent": 3.78,
-                "profit": 85453.22,
-                "value": 2343881.91
+                "returnPercent": 2.81,
+                "profit": 59759.49,
+                "value": 2184800.62
             },
             {
                 "month": "Aug 2025",
-                "returnPercent": 5.51,
-                "profit": 117926.39,
-                "value": 2258428.69
+                "returnPercent": 3.61,
+                "profit": 74050.49,
+                "value": 2125041.13
             },
             {
                 "month": "Jul 2025",
-                "returnPercent": 5.26,
-                "profit": 107042.63,
-                "value": 2140502.3
+                "returnPercent": 0.82,
+                "profit": 16658.38,
+                "value": 2050990.64
             },
             {
                 "month": "Jun 2025",
-                "returnPercent": 6.73,
-                "profit": 128140.18,
-                "value": 2033459.67
+                "returnPercent": 6.67,
+                "profit": 127219.15,
+                "value": 2034332.26
             },
             {
                 "month": "May 2025",
-                "returnPercent": 2.29,
-                "profit": 42738.7,
-                "value": 1905319.49
+                "returnPercent": 4.57,
+                "profit": 83399.67,
+                "value": 1907113.11
             },
             {
                 "month": "Apr 2025",
-                "returnPercent": 6.05,
-                "profit": 106308.56,
-                "value": 1862580.79
+                "returnPercent": 2.47,
+                "profit": 43898.38,
+                "value": 1823713.44
             },
             {
                 "month": "Mar 2025",
-                "returnPercent": 1.31,
-                "profit": 22736.71,
-                "value": 1756272.23
+                "returnPercent": 3.72,
+                "profit": 63854.95,
+                "value": 1779815.06
             },
             {
                 "month": "Feb 2025",
-                "returnPercent": 0.86,
-                "profit": 14750.61,
-                "value": 1733535.52
+                "returnPercent": 6.64,
+                "profit": 106904.45,
+                "value": 1715960.11
             },
             {
                 "month": "Jan 2025",
-                "returnPercent": 1.66,
-                "profit": 28013.93,
-                "value": 1718784.91
+                "returnPercent": 4.85,
+                "profit": 74396.93,
+                "value": 1609055.66
             },
             {
                 "month": "Dec 2024",
-                "returnPercent": 4.73,
-                "profit": 76394.35,
-                "value": 1690770.98
+                "returnPercent": 1.99,
+                "profit": 29887.11,
+                "value": 1534658.73
             },
             {
                 "month": "Nov 2024",
-                "returnPercent": 6.69,
-                "profit": 101291.66,
-                "value": 1614376.63
+                "returnPercent": 5.64,
+                "profit": 80290.76,
+                "value": 1504771.62
             },
             {
                 "month": "Oct 2024",
-                "returnPercent": 2.31,
-                "profit": 34091.17,
-                "value": 1513084.97
+                "returnPercent": 5.55,
+                "profit": 74914.75,
+                "value": 1424480.86
             },
             {
                 "month": "Sep 2024",
-                "returnPercent": 2.14,
-                "profit": 30998.5,
-                "value": 1478993.8
+                "returnPercent": 3.66,
+                "profit": 47665.36,
+                "value": 1349566.11
             },
             {
                 "month": "Aug 2024",
-                "returnPercent": 4.76,
-                "profit": 65802.11,
-                "value": 1447995.3
+                "returnPercent": 3.75,
+                "profit": 47071.68,
+                "value": 1301900.75
             },
             {
                 "month": "Jul 2024",
-                "returnPercent": 4.34,
-                "profit": 57544.18,
-                "value": 1382193.19
+                "returnPercent": 2.19,
+                "profit": 26867.38,
+                "value": 1254829.07
             },
             {
                 "month": "Jun 2024",
-                "returnPercent": 6.04,
-                "profit": 75484.57,
-                "value": 1324649.01
+                "returnPercent": 1.15,
+                "profit": 13929.38,
+                "value": 1227961.69
             },
             {
                 "month": "May 2024",
-                "returnPercent": 6.55,
-                "profit": 76784.87,
-                "value": 1249164.44
+                "returnPercent": 4.14,
+                "profit": 48312.35,
+                "value": 1214032.31
             },
             {
                 "month": "Apr 2024",
-                "returnPercent": 2.77,
-                "profit": 31611.01,
-                "value": 1172379.57
+                "returnPercent": 2.79,
+                "profit": 31660.18,
+                "value": 1165719.96
             },
             {
                 "month": "Mar 2024",
-                "returnPercent": 4.89,
-                "profit": 53171.15,
-                "value": 1140768.56
+                "returnPercent": 5.17,
+                "profit": 55776.1,
+                "value": 1134059.78
             },
             {
                 "month": "Feb 2024",
-                "returnPercent": 5.93,
-                "profit": 60920.65,
-                "value": 1087597.41
+                "returnPercent": 4.77,
+                "profit": 49050.07,
+                "value": 1078283.68
             },
             {
                 "month": "Jan 2024",
-                "returnPercent": 6.07,
-                "profit": 58774.96,
-                "value": 1026676.76
+                "returnPercent": 3.51,
+                "profit": 34867.04,
+                "value": 1029233.61
             },
             {
                 "month": "Dec 2023",
-                "returnPercent": 2.74,
-                "profit": 25795.74,
-                "value": 967901.8
+                "returnPercent": 5.39,
+                "profit": 50878.77,
+                "value": 994366.57
             },
             {
                 "month": "Nov 2023",
-                "returnPercent": 5.78,
-                "profit": 51514.61,
-                "value": 942106.06
+                "returnPercent": 3,
+                "profit": 27440.56,
+                "value": 943487.8
             },
             {
                 "month": "Oct 2023",
-                "returnPercent": 5.07,
-                "profit": 42948.23,
-                "value": 890591.45
+                "returnPercent": 3.21,
+                "profit": 28522.36,
+                "value": 916047.24
             },
             {
                 "month": "Sep 2023",
-                "returnPercent": 2.96,
-                "profit": 24341.81,
-                "value": 847643.22
+                "returnPercent": 6.48,
+                "profit": 54041.14,
+                "value": 887524.88
             },
             {
                 "month": "Aug 2023",
-                "returnPercent": 2.91,
-                "profit": 23301.41,
-                "value": 823301.41
+                "returnPercent": 4.19,
+                "profit": 33483.74,
+                "value": 833483.74
             }
         ]
     },
@@ -196,203 +196,12 @@
             "name": "NikolAI",
             "type": "EUR / USD",
             "summary": {
-                "initialInvestment": 800000.0,
-                "currentValue": 2339047,
-                "totalReturn": 1539047,
-                "returnPercent": 192.38,
-                "months": 28,
-                "successRate": 100.0,
-                "positiveMonths": 28,
-                "avgMonthlyPercent": 3.87,
-                "period": "August 2023 - Apr 2026"
-            },
-            "metrics": {
-                "sharpeRatio": 2.69,
-                "maxDrawdown": 6.85,
-                "totalTrades": 4014,
-                "tickersTraded": 118
-            },
-            "monthlyHistory": [
-                {
-                    "month": "Nov 2025",
-                    "returnPercent": 1.08,
-                    "profit": 25067.84,
-                    "value": 2339047.38
-                },
-                {
-                    "month": "Oct 2025",
-                    "returnPercent": 5.91,
-                    "profit": 129178.92,
-                    "value": 2313979.54
-                },
-                {
-                    "month": "Sep 2025",
-                    "returnPercent": 2.81,
-                    "profit": 59759.49,
-                    "value": 2184800.62
-                },
-                {
-                    "month": "Aug 2025",
-                    "returnPercent": 3.61,
-                    "profit": 74050.49,
-                    "value": 2125041.13
-                },
-                {
-                    "month": "Jul 2025",
-                    "returnPercent": 0.82,
-                    "profit": 16658.38,
-                    "value": 2050990.64
-                },
-                {
-                    "month": "Jun 2025",
-                    "returnPercent": 6.67,
-                    "profit": 127219.15,
-                    "value": 2034332.26
-                },
-                {
-                    "month": "May 2025",
-                    "returnPercent": 4.57,
-                    "profit": 83399.67,
-                    "value": 1907113.11
-                },
-                {
-                    "month": "Apr 2025",
-                    "returnPercent": 2.47,
-                    "profit": 43898.38,
-                    "value": 1823713.44
-                },
-                {
-                    "month": "Mar 2025",
-                    "returnPercent": 3.72,
-                    "profit": 63854.95,
-                    "value": 1779815.06
-                },
-                {
-                    "month": "Feb 2025",
-                    "returnPercent": 6.64,
-                    "profit": 106904.45,
-                    "value": 1715960.11
-                },
-                {
-                    "month": "Jan 2025",
-                    "returnPercent": 4.85,
-                    "profit": 74396.93,
-                    "value": 1609055.66
-                },
-                {
-                    "month": "Dec 2024",
-                    "returnPercent": 1.99,
-                    "profit": 29887.11,
-                    "value": 1534658.73
-                },
-                {
-                    "month": "Nov 2024",
-                    "returnPercent": 5.64,
-                    "profit": 80290.76,
-                    "value": 1504771.62
-                },
-                {
-                    "month": "Oct 2024",
-                    "returnPercent": 5.55,
-                    "profit": 74914.75,
-                    "value": 1424480.86
-                },
-                {
-                    "month": "Sep 2024",
-                    "returnPercent": 3.66,
-                    "profit": 47665.36,
-                    "value": 1349566.11
-                },
-                {
-                    "month": "Aug 2024",
-                    "returnPercent": 3.75,
-                    "profit": 47071.68,
-                    "value": 1301900.75
-                },
-                {
-                    "month": "Jul 2024",
-                    "returnPercent": 2.19,
-                    "profit": 26867.38,
-                    "value": 1254829.07
-                },
-                {
-                    "month": "Jun 2024",
-                    "returnPercent": 1.15,
-                    "profit": 13929.38,
-                    "value": 1227961.69
-                },
-                {
-                    "month": "May 2024",
-                    "returnPercent": 4.14,
-                    "profit": 48312.35,
-                    "value": 1214032.31
-                },
-                {
-                    "month": "Apr 2024",
-                    "returnPercent": 2.79,
-                    "profit": 31660.18,
-                    "value": 1165719.96
-                },
-                {
-                    "month": "Mar 2024",
-                    "returnPercent": 5.17,
-                    "profit": 55776.1,
-                    "value": 1134059.78
-                },
-                {
-                    "month": "Feb 2024",
-                    "returnPercent": 4.77,
-                    "profit": 49050.07,
-                    "value": 1078283.68
-                },
-                {
-                    "month": "Jan 2024",
-                    "returnPercent": 3.51,
-                    "profit": 34867.04,
-                    "value": 1029233.61
-                },
-                {
-                    "month": "Dec 2023",
-                    "returnPercent": 5.39,
-                    "profit": 50878.77,
-                    "value": 994366.57
-                },
-                {
-                    "month": "Nov 2023",
-                    "returnPercent": 3.0,
-                    "profit": 27440.56,
-                    "value": 943487.8
-                },
-                {
-                    "month": "Oct 2023",
-                    "returnPercent": 3.21,
-                    "profit": 28522.36,
-                    "value": 916047.24
-                },
-                {
-                    "month": "Sep 2023",
-                    "returnPercent": 6.48,
-                    "profit": 54041.14,
-                    "value": 887524.88
-                },
-                {
-                    "month": "Aug 2023",
-                    "returnPercent": 4.19,
-                    "profit": 33483.74,
-                    "value": 833483.74
-                }
-            ]
-        },
-        {
-            "name": "NikolAI",
-            "type": "EUR / USD",
-            "summary": {
-                "initialInvestment": 50000.0,
+                "initialInvestment": 50000,
                 "currentValue": 88876,
                 "totalReturn": 38876,
                 "returnPercent": 77.75,
                 "months": 19,
-                "successRate": 100.0,
+                "successRate": 100,
                 "positiveMonths": 19,
                 "avgMonthlyPercent": 4.03,
                 "period": "May 2024 - Apr 2026"
@@ -524,12 +333,12 @@
             "name": "NikolAI",
             "type": "EUR / USD",
             "summary": {
-                "initialInvestment": 75000.0,
+                "initialInvestment": 75000,
                 "currentValue": 97476,
                 "totalReturn": 22476,
                 "returnPercent": 29.97,
                 "months": 9,
-                "successRate": 100.0,
+                "successRate": 100,
                 "positiveMonths": 9,
                 "avgMonthlyPercent": 2.82,
                 "period": "March 2025 - Apr 2026"
@@ -591,7 +400,7 @@
                 },
                 {
                     "month": "Mar 2025",
-                    "returnPercent": 4.0,
+                    "returnPercent": 4,
                     "profit": 2999.35,
                     "value": 77999.35
                 }

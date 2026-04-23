@@ -76,7 +76,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         <span className="text-blue-200/80"> and Empower Your Finances</span>
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
-                        Everything you need to manage, track, and grow your money — all in one intuitive platform
+                        Everything you need to manage, track, and grow your money  all in one intuitive platform
                     </p>
                 </div>
 

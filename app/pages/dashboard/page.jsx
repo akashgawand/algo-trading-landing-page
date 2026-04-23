@@ -295,24 +295,11 @@ const DashboardCockpit = () => {
                 style={{ borderBottom: `1px solid ${theme.border}` }}>
 
                 <div className="flex items-center gap-3 sm:gap-4 group">
-                    <div className="relative shrink-0">
-                        <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-lg sm:rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-white/20 group-hover:bg-white/[0.05]">
-                            <h1 className="text-xs sm:text-xl font-black transition-all duration-500 group-hover:scale-110 leading-none select-none" style={{ color: theme.accent }}>
-                                G
-                            </h1>
-                        </div>
-                        <div className="absolute -bottom-0.5 -right-0.5 w-2.5 sm:w-3.5 h-2.5 sm:h-3.5 rounded-full bg-emerald-500 border-2 border-[#05050f] shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
-                    </div>
-                    <div className="flex flex-col gap-0.5">
-                        <div className="flex items-center gap-1.5 sm:gap-2">
-                            <h1 className="text-[14px] sm:text-[15px] font-black text-white tracking-tighter uppercase leading-none">
-                                GEMALGO <span className="text-white/40 hidden sm:inline">PROCESSOR</span>
-                            </h1>
-                        </div>
-                        <span className="text-[8px] sm:text-[9px] text-white/10 uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black leading-none group-hover:text-white/20 transition-colors hidden xs:block">
-                            Institutional Core
-                        </span>
-                    </div>
+                    <img
+                        src="/gemalgoblue.png"
+                        alt="Gemalgo Logo"
+                        className="h-12 sm:h-24 w-auto object-contain"
+                    />
                 </div>
 
                 <div className="flex items-center gap-0.5 p-1 rounded-xl border bg-[#12131a] overflow-x-auto no-scrollbar scroll-smooth" style={{ borderColor: theme.border }}>
@@ -528,6 +515,177 @@ const DashboardCockpit = () => {
                                 </div>
                             </GlassCard>
                         </div>
+                        {/* ── ORION DETAILED METRICS ─────────────────────── */}
+                        {strategy === 'orion' && activeAccount?.yearlyPerformance && (
+                            <div className="mt-5 space-y-5">
+                                {/* Yearly & Recent Performance Grid */}
+                                <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                                    {/* Yearly Performance */}
+                                    <GlassCard theme={theme} className="px-4 sm:px-8 py-5 sm:py-7 overflow-x-auto">
+                                        <SectionHeader title="Yearly Performance" theme={theme} />
+                                        <table className="w-full border-collapse text-[12px] min-w-[400px]">
+                                            <thead>
+                                                <tr className="border-b border-white/5">
+                                                    {["Year", "Return", "Months", "Equity", "Win Rate"].map(h => (
+                                                        <th key={h} className="py-3 px-2 text-white/35 font-semibold text-[10px] uppercase tracking-widest text-right first:text-left">{h}</th>
+                                                    ))}
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-white/5">
+                                                {activeAccount.yearlyPerformance.map((y, i) => (
+                                                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
+                                                        <td className="py-3 px-2 text-white/70 font-bold">{y.year}</td>
+                                                        <td className="py-3 px-2 text-right font-bold" style={{ color: y.returnPercent >= 0 ? theme.positive : theme.negative }}>{y.returnPercent > 0 ? "+" : ""}{y.returnPercent}%</td>
+                                                        <td className="py-3 px-2 text-right text-white/50">{y.months}</td>
+                                                        <td className="py-3 px-2 text-right text-white/90 tabular-nums">{fmt.currency(y.equity)}</td>
+                                                        <td className="py-3 px-2 text-right text-white/70">{y.winRate}%</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </GlassCard>
+
+                                    {/* Recent Performance */}
+                                    <GlassCard theme={theme} className="px-4 sm:px-8 py-5 sm:py-7 overflow-x-auto">
+                                        <SectionHeader title="Recent Performance" theme={theme} />
+                                        <table className="w-full border-collapse text-[12px] min-w-[400px]">
+                                            <thead>
+                                                <tr className="border-b border-white/5">
+                                                    {["Period", "Return", "Profit", "Win Rate"].map(h => (
+                                                        <th key={h} className="py-3 px-2 text-white/35 font-semibold text-[10px] uppercase tracking-widest text-right first:text-left">{h}</th>
+                                                    ))}
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-white/5">
+                                                {activeAccount.recentPerformance.map((r, i) => (
+                                                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
+                                                        <td className="py-3 px-2 text-white/70 font-bold">{r.period}</td>
+                                                        <td className="py-3 px-2 text-right font-bold" style={{ color: r.returnPercent >= 0 ? theme.positive : theme.negative }}>{r.returnPercent > 0 ? "+" : ""}{r.returnPercent}%</td>
+                                                        <td className="py-3 px-2 text-right text-white/90 tabular-nums" style={{ color: r.profit >= 0 ? theme.positive : theme.negative }}>{r.profit > 0 ? "+" : ""}{fmt.currency(r.profit)}</td>
+                                                        <td className="py-3 px-2 text-right text-white/70">{r.winRate}%</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </GlassCard>
+                                </div>
+
+                                {/* Trading Statistics & Top Stocks Grid */}
+                                <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                                    {/* Statistics & Allocation */}
+                                    <div className="space-y-5">
+                                        <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
+                                            <SectionHeader title="Trading Statistics" theme={theme} />
+                                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Long Trades</span><span className="text-white font-bold">{activeAccount.tradingStatistics.longTrades}</span></div>
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Short Trades</span><span className="text-white font-bold">{activeAccount.tradingStatistics.shortTrades}</span></div>
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Profit Factor</span><span className="text-emerald-400 font-bold">{activeAccount.tradingStatistics.profitFactor}</span></div>
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Long Win Rate</span><span className="text-white font-bold">{activeAccount.tradingStatistics.longWinRate}%</span></div>
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Short Win Rate</span><span className="text-white font-bold">{activeAccount.tradingStatistics.shortWinRate}%</span></div>
+                                                <div className="flex flex-col"><span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Expectancy</span><span className="text-emerald-400 font-bold">{activeAccount.tradingStatistics.expectancy}%</span></div>
+                                            </div>
+                                        </GlassCard>
+
+                                        <GlassCard theme={theme} className="px-4 sm:px-8 py-5 sm:py-7 overflow-x-auto">
+                                            <SectionHeader title="Sector Allocation" theme={theme} />
+                                            <table className="w-full border-collapse text-[12px]">
+                                                <tbody>
+                                                    {activeAccount.sectorAllocation.map((s, i) => (
+                                                        <tr key={i} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02]">
+                                                            <td className="py-2.5 px-2 text-white/80 font-medium">{s.sector}</td>
+                                                            <td className="py-2.5 px-2 text-right">
+                                                                <div className="flex items-center justify-end gap-3">
+                                                                    <div className="w-24 h-1.5 bg-white/10 rounded-full overflow-hidden">
+                                                                        <div className="h-full bg-blue-500 rounded-full" style={{ width: `${s.allocationPercent}%`, background: theme.accent }} />
+                                                                    </div>
+                                                                    <span className="text-white/90 font-bold w-10">{s.allocationPercent}%</span>
+                                                                </div>
+                                                            </td>
+                                                            <td className="py-2.5 px-2 text-right text-white/40 text-[10px]">{s.trades} trades</td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                        </GlassCard>
+                                    </div>
+
+                                    {/* Top Performing Stocks */}
+                                    <GlassCard theme={theme} className="px-4 sm:px-8 py-5 sm:py-7 overflow-x-auto h-full">
+                                        <SectionHeader title="Top Performing Stocks" theme={theme} />
+                                        <table className="w-full border-collapse text-[12px] min-w-[300px]">
+                                            <thead>
+                                                <tr className="border-b border-white/5">
+                                                    {["Ticker", "Return", "Trades", "Win Rate"].map(h => (
+                                                        <th key={h} className="py-3 px-2 text-white/35 font-semibold text-[10px] uppercase tracking-widest text-right first:text-left">{h}</th>
+                                                    ))}
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-white/5">
+                                                {activeAccount.topPerformingStocks.map((s, i) => (
+                                                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
+                                                        <td className="py-3 px-2 text-white/90 font-bold tracking-wider">{s.ticker}</td>
+                                                        <td className="py-3 px-2 text-right font-bold" style={{ color: theme.positive }}>+{s.returnPercent}%</td>
+                                                        <td className="py-3 px-2 text-right text-white/50">{s.trades}</td>
+                                                        <td className="py-3 px-2 text-right text-white/70">{s.winRate}%</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </GlassCard>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* ── APOLLO DETAILED METRICS ─────────────────────── */}
+                        {strategy === 'apollo' && activeAccount?.performanceMetrics && (
+                            <div className="mt-5 space-y-5">
+                                <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                                    <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
+                                        <SectionHeader title="Performance Metrics" theme={theme} />
+                                        <div className="grid grid-cols-2 gap-6">
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Win Rate</span>
+                                                <span className="text-white font-bold text-lg">{activeAccount.performanceMetrics.winRate}%</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Profit Factor</span>
+                                                <span className="text-emerald-400 font-bold text-lg">{activeAccount.performanceMetrics.profitFactor}</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Peak Drawdown</span>
+                                                <span className="text-rose-400 font-bold text-lg">{activeAccount.performanceMetrics.peakDrawdown}%</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Risk/Reward Ratio</span>
+                                                <span className="text-white font-bold text-lg">{activeAccount.performanceMetrics.riskRewardRatio}</span>
+                                            </div>
+                                        </div>
+                                    </GlassCard>
+
+                                    <GlassCard theme={theme} className="px-5 sm:px-8 py-5 sm:py-7">
+                                        <SectionHeader title="Trading Statistics" theme={theme} />
+                                        <div className="grid grid-cols-2 gap-6">
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Positive Months</span>
+                                                <span className="text-white font-bold text-lg">{activeAccount.tradingStatistics.positiveMonths}</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Success Rate</span>
+                                                <span className="text-white font-bold text-lg">{activeAccount.tradingStatistics.successRate}%</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Avg Trade Result</span>
+                                                <span className="text-emerald-400 font-bold text-lg">{fmt.currency(activeAccount.tradingStatistics.avgTradeResult)}</span>
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Total Pips</span>
+                                                <span className="text-white font-bold text-lg">{activeAccount.tradingStatistics.totalPips.toLocaleString()}</span>
+                                            </div>
+                                        </div>
+                                    </GlassCard>
+                                </div>
+                            </div>
+                        )}
 
                         <GlassCard theme={theme} className="mt-5 px-4 sm:px-8 py-5 sm:py-7">
                             <SectionHeader title="Monthly Performance Breakdown" theme={theme} />
@@ -610,6 +768,7 @@ const DashboardCockpit = () => {
                             )}
                         </GlassCard>
 
+                        
                     </motion.div>
                 </AnimatePresence>
             </main>

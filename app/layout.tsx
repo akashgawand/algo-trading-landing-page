@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gemalgo | AI-Powered Trading Strategy",
-  description: "Advanced algorithmic trading with NikolAI. Transparent performance and institutional-grade execution.",
+  description: "Advanced algorithmic trading with NikolAI. Transparent performance and institutional grade execution.",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
