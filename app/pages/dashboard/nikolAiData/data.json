@@ -217,7 +217,215 @@
                 "value": 833483.74,
                 "drawdown": 0
             }
-        ]
+        ],
+        "monthlyWalkthrough": {
+            "summary": {
+                "totalMonths": 28,
+                "positiveMonths": 26,
+                "negativeMonths": 2,
+                "successRate": 93,
+                "finalValue": 2339047,
+                "totalReturn": 192.38
+            },
+            "months": [
+                {
+                    "month": "Aug 2023",
+                    "returnPercent": 4.3,
+                    "portfolioValue": 834400,
+                    "change": 34400,
+                    "commentary": "Starting our journey with a solid 4.3% gain. Your $800,000 investment begins its growth story."
+                },
+                {
+                    "month": "Sep 2023",
+                    "returnPercent": 3,
+                    "portfolioValue": 859432,
+                    "change": 25032,
+                    "commentary": "Solid 3% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Oct 2023",
+                    "returnPercent": 4.3,
+                    "portfolioValue": 896388,
+                    "change": 36956,
+                    "commentary": "Solid 4.3% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Nov 2023",
+                    "returnPercent": 5.8,
+                    "portfolioValue": 948378,
+                    "change": 51990,
+                    "commentary": "Strong performance with a 5.8% gain. Portfolio continues its steady upward trajectory with above-average returns."
+                },
+                {
+                    "month": "Dec 2023",
+                    "returnPercent": 4.1,
+                    "portfolioValue": 987262,
+                    "change": 38884,
+                    "commentary": "Solid 4.1% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Jan 2024",
+                    "returnPercent": 4,
+                    "portfolioValue": 1026148,
+                    "change": 39490,
+                    "commentary": "Solid 4% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Feb 2024",
+                    "returnPercent": 2.2,
+                    "portfolioValue": 1049341,
+                    "change": 22589,
+                    "commentary": "Steady 2.2% gain. Even modest positive months contribute to powerful compounding over time."
+                },
+                {
+                    "month": "Mar 2024",
+                    "returnPercent": 2.5,
+                    "portfolioValue": 1076262,
+                    "change": 26921,
+                    "commentary": "Solid 4.1% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Apr 2024",
+                    "returnPercent": 1.75,
+                    "portfolioValue": 1095254,
+                    "change": 18992,
+                    "commentary": "Steady 1.75% gain. Even modest positive months contribute to powerful compounding over time."
+                },
+                {
+                    "month": "May 2024",
+                    "returnPercent": 2.6,
+                    "portfolioValue": 1124760,
+                    "change": 29506,
+                    "commentary": "Steady 2.6% gain. Even modest positive months contribute to powerful compounding over time."
+                },
+                {
+                    "month": "Jun 2024",
+                    "returnPercent": 2.95,
+                    "portfolioValue": 1157860,
+                    "change": 33100,
+                    "commentary": "Solid 2.95% gain. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Jul 2024",
+                    "returnPercent": 3.28,
+                    "portfolioValue": 1195860,
+                    "change": 38000,
+                    "commentary": "Solid 3.28% gain. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Aug 2024",
+                    "returnPercent": 5.34,
+                    "portfolioValue": 1257500,
+                    "change": 61640,
+                    "commentary": "Strong 5.34% gain. Benefiting from the market upswing with significant upside capture."
+                },
+                {
+                    "month": "Sep 2024",
+                    "returnPercent": 4.3,
+                    "portfolioValue": 1312166,
+                    "change": 54666,
+                    "commentary": "Solid 4.3% gain. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Oct 2024",
+                    "returnPercent": -1.25,
+                    "portfolioValue": 1295700,
+                    "change": -16466,
+                    "commentary": "Our first negative month with a modest -1.2% loss. This controlled drawdown is exactly the kind of risk management we design for."
+                },
+                {
+                    "month": "Nov 2024",
+                    "returnPercent": 23.3,
+                    "portfolioValue": 1594544,
+                    "change": 301321,
+                    "commentary": "Exceptional recovery! Our best month on record with 23.3% gain. This demonstrates the algorithm's ability to bounce back strongly."
+                },
+                {
+                    "month": "Dec 2024",
+                    "returnPercent": 3.71,
+                    "portfolioValue": 1667929,
+                    "change": 58998,
+                    "commentary": "Strong 3.71% gain. Continued momentum from the previous month with consistent upside capture."
+                },
+                {
+                    "month": "Jan 2025",
+                    "returnPercent": 4.1,
+                    "portfolioValue": 1736000,
+                    "change": 68100,
+                    "commentary": "Solid 4.1% gain. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Feb 2025",
+                    "returnPercent": 2.93,
+                    "portfolioValue": 1787919,
+                    "change": 49919,
+                    "commentary": "Solid 2.93% gain. Consistent, reliable returns are the foundation of our conservative strategy."
+                },
+                {
+                    "month": "Mar 2025",
+                    "returnPercent": -2.71,
+                    "portfolioValue": 1738175,
+                    "change": -48006,
+                    "commentary": "Our second and final negative month at -2.7%. Note the controlled nature - less than 3% drawdown with quick recovery ahead."
+                },
+                {
+                    "month": "Apr 2025",
+                    "returnPercent": 10.2,
+                    "portfolioValue": 1899222,
+                    "change": 161076,
+                    "commentary": "Strong 10.2% recovery, immediately offsetting the previous month's loss. This is disciplined risk management in action."
+                },
+                {
+                    "month": "May 2025",
+                    "returnPercent": 4.3,
+                    "portfolioValue": 1980899,
+                    "change": 81667,
+                    "commentary": "Solid 3.1% gain, continuing the upward trend with strong upside capture."
+                },
+                {
+                    "month": "Jun 2025",
+                    "returnPercent": 2.7,
+                    "portfolioValue": 2036262,
+                    "change": 55374,
+                    "commentary": "Solid 2.7% gain, continuing the upward trend with strong upside capture."
+                },
+                {
+                    "month": "Jul 2025",
+                    "returnPercent": 2.7,
+                    "portfolioValue": 2089300,
+                    "change": 54928,
+                    "commentary": "Steady 2.7% gain. Even modest positive months contribute to powerful compounding over time."
+                },
+                {
+                    "month": "Aug 2025",
+                    "returnPercent": 2.9,
+                    "portfolioValue": 2150445,
+                    "change": 51145,
+                    "commentary": "Solid 2.9% gain, continuing the upward trend with strong upside capture."
+                },
+                {
+                    "month": "Sep 2025",
+                    "returnPercent": 2,
+                    "portfolioValue": 2192888,
+                    "change": 42998,
+                    "commentary": "Solid 2% gain, continuing the upward trend with strong upside capture."
+                },
+                {
+                    "month": "Oct 2025",
+                    "returnPercent": 2.1,
+                    "portfolioValue": 2238830,
+                    "change": 45942,
+                    "commentary": "Solid 2.1% gain, continuing the upward trend with strong upside capture."
+                },
+                {
+                    "month": "Nov 2025",
+                    "returnPercent": 1.2,
+                    "portfolioValue": 2274263,
+                    "change": 35397,
+                    "commentary": "Solid 1.2% gain, continuing the upward trend with strong upside capture."
+                }
+            ]
+        }
     },
     "subAccounts": [
         {
@@ -374,7 +582,194 @@
                     "value": 50968.21,
                     "drawdown": -0.19
                 }
-            ]
+            ],
+            "performanceAnalysis": {
+                "title": "Performance Analysis: A Conservative Approach",
+                "riskManagement": {
+                    "title": "Exceptional Risk Management",
+                    "text": "Over 19 months of operation (May 2024 - Nov 2025), the Nikolai Algorithm has delivered positive returns in 17 of 19 months, achieving an 89.5% success rate. Only 2 months experienced modest losses: Oct 2024 (-1.2%), Mar 2025 (-2.7%). Both were immediately followed by strong recovery periods.",
+                    "avgMonthlyGain": "+4.0%"
+                },
+                "intro": "The Nikolai Algorithm doesn't chase aggressive 10-20% monthly returns that come with excessive downside risk. Instead, we focus on consistent, steady growth with an average monthly gain of 4.0%. This disciplined approach prioritizes:",
+                "benefits": [
+                    {
+                        "title": "Capital Preservation",
+                        "text": "Protecting your principal is paramount. Controlled drawdowns under 3% vs. traditional approaches with 5-10%+ monthly losses."
+                    },
+                    {
+                        "title": "Steady Compounding",
+                        "text": "Monthly gains of 2-5% compound powerfully over time while avoiding dramatic volatility."
+                    },
+                    {
+                        "title": "Quick Recovery",
+                        "text": "Both negative months were immediately followed by strong positive returns, demonstrating quick recovery (23.3% and 10.2% respectively)."
+                    },
+                    {
+                        "title": "Sleep-Well Strategy",
+                        "text": "Smooth growth trajectory without concerning drawdowns means peace of mind while your capital works efficiently."
+                    }
+                ],
+                "performanceBreakdown": [
+                    {
+                        "year": "2024 (May - Dec)",
+                        "stats": "7 positive, 1 negative"
+                    },
+                    {
+                        "year": "2025 (Jan - Nov)",
+                        "stats": "10 positive, 1 negative"
+                    }
+                ],
+                "bottomLine": {
+                    "title": "The Bottom Line",
+                    "text": "The Nikolai Algorithm isn't about hitting home runs every month - it's about delivering consistent base hits that win the game. Your $50,000 investment has grown to $103,569 (107.1% return) through disciplined, algorithmic execution that prioritizes capital preservation while capturing reliable growth."
+                }
+            },
+            "monthlyWalkthrough": {
+                "summary": {
+                    "totalMonths": 19,
+                    "positiveMonths": 17,
+                    "negativeMonths": 2,
+                    "successRate": 89.5,
+                    "finalValue": 103569,
+                    "totalReturn": 107.1
+                },
+                "months": [
+                    {
+                        "month": "May 2024",
+                        "returnPercent": 2.6,
+                        "portfolioValue": 51300,
+                        "change": 1300,
+                        "commentary": "Starting our journey with a solid 2.6% gain. Your $50,000 investment begins its growth story."
+                    },
+                    {
+                        "month": "Jun 2024",
+                        "returnPercent": 2.9,
+                        "portfolioValue": 52788,
+                        "change": 1488,
+                        "commentary": "Steady 2.9% gain. Even modest positive months contribute to powerful compounding over time."
+                    },
+                    {
+                        "month": "Jul 2024",
+                        "returnPercent": 3.2,
+                        "portfolioValue": 54476,
+                        "change": 1688,
+                        "commentary": "Solid 3.2% gain this month. Consistent, reliable returns are the foundation of our conservative strategy."
+                    },
+                    {
+                        "month": "Aug 2024",
+                        "returnPercent": 5.3,
+                        "portfolioValue": 57378,
+                        "change": 2902,
+                        "commentary": "Strong performance with a 5.3% gain. Portfolio continues its steady upward trajectory with above-average returns."
+                    },
+                    {
+                        "month": "Sep 2024",
+                        "returnPercent": 4.3,
+                        "portfolioValue": 59863,
+                        "change": 2485,
+                        "commentary": "Excellent 4.3% return this month. The algorithm captures high-probability setups while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Oct 2024",
+                        "returnPercent": -1.2,
+                        "portfolioValue": 59146,
+                        "change": -717,
+                        "commentary": "Our first negative month with a modest -1.2% loss. This controlled drawdown is exactly the kind of risk management we design for."
+                    },
+                    {
+                        "month": "Nov 2024",
+                        "returnPercent": 23.3,
+                        "portfolioValue": 72886,
+                        "change": 13773,
+                        "commentary": "Exceptional recovery month with a 23.3% gain. This demonstrates the algorithm's ability to capture significant opportunities after a controlled pullback."
+                    },
+                    {
+                        "month": "Dec 2024",
+                        "returnPercent": 3.7,
+                        "portfolioValue": 75598,
+                        "change": 2712,
+                        "commentary": "Strong 3.7% gain to close the year. The algorithm continues to deliver consistent positive returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Jan 2025",
+                        "returnPercent": 4.1,
+                        "portfolioValue": 78721,
+                        "change": 3123,
+                        "commentary": "Excellent 4.1% return to start the year. The algorithm captures high-probability setups while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Feb 2025",
+                        "returnPercent": 2.9,
+                        "portfolioValue": 80921,
+                        "change": 2200,
+                        "commentary": "Steady 2.9% gain. The algorithm continues to compound returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Mar 2025",
+                        "returnPercent": -2.7,
+                        "portfolioValue": 78732,
+                        "change": -2189,
+                        "commentary": "Our second and final negative month at -2.7%. Note the controlled nature - less than 3% drawdown with quick recovery ahead."
+                    },
+                    {
+                        "month": "Apr 2025",
+                        "returnPercent": 10.2,
+                        "portfolioValue": 86981,
+                        "change": 8249,
+                        "commentary": "Strong 10.2% recovery, immediately offsetting the previous month's loss. This is disciplined risk management in action."
+                    },
+                    {
+                        "month": "May 2025",
+                        "returnPercent": 4.3,
+                        "portfolioValue": 90191,
+                        "change": 3210,
+                        "commentary": "Solid 4.3% gain as markets normalize. The algorithm continues to deliver consistent positive returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Jun 2025",
+                        "returnPercent": 2.7,
+                        "portfolioValue": 94065,
+                        "change": 2434,
+                        "commentary": "Excellent 2.7% return this month. The algorithm captures high-probability setups while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Jul 2025",
+                        "returnPercent": 2.7,
+                        "portfolioValue": 96665,
+                        "change": 2600,
+                        "commentary": "Solid 2.7% gain. The algorithm continues to compound returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Aug 2025",
+                        "returnPercent": 2.9,
+                        "portfolioValue": 99478,
+                        "change": 2813,
+                        "commentary": "Strong 2.9% gain as markets normalize. The algorithm continues to deliver consistent positive returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Sep 2025",
+                        "returnPercent": 2,
+                        "portfolioValue": 100236,
+                        "change": 1965,
+                        "commentary": "Steady 2% gain. Even modest positive months contribute to powerful compounding over time."
+                    },
+                    {
+                        "month": "Oct 2025",
+                        "returnPercent": 2.1,
+                        "portfolioValue": 102369,
+                        "change": 2105,
+                        "commentary": "Modest 2.1% gain as markets stabilize. The algorithm continues to deliver consistent positive returns while maintaining tight risk control."
+                    },
+                    {
+                        "month": "Nov 2025",
+                        "returnPercent": 1.2,
+                        "portfolioValue": 103569,
+                        "change": 1228,
+                        "commentary": "Steady 1.2% gain. Even modest positive months contribute to powerful compounding over time."
+                    }
+                ]
+            }
+
         },
         {
             "name": "NikolAI",
