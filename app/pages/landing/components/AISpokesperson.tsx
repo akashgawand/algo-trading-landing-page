@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from '../../../ui/button';
-import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, Maximize2, Minimize2, X } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, Maximize2, Minimize2, X, Loader2 } from 'lucide-react';
 
 interface AISpokespersonProps {
   onClose?: () => void;
@@ -59,6 +59,7 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentSection, setCurrentSection] = useState<'homePage' | 'account800k' | 'account50k' | 'account75k' | 'closing'>('homePage');
   const [isMuted, setIsMuted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -79,6 +80,12 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
     
     if (typeof window !== 'undefined') {
       audioRef.current = new Audio(voiceOverScript[currentSection].audioSrc);
+      
+      // Loading states
+      audioRef.current.onloadstart = () => setIsLoading(true);
+      audioRef.current.oncanplay = () => setIsLoading(false);
+      audioRef.current.onwaiting = () => setIsLoading(true);
+      audioRef.current.onplaying = () => setIsLoading(false);
       
       audioRef.current.onended = () => {
         const currentIdx = sections.findIndex(s => s.id === currentSection);
@@ -108,6 +115,7 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
         audioRef.current.play().catch((err) => {
           console.warn("Audio play failed, likely missing file:", err);
           setIsPlaying(false);
+          setIsLoading(false);
         });
       } else {
         audioRef.current.pause();
@@ -234,7 +242,13 @@ export function AISpokesperson({ onClose, isMobile }: AISpokespersonProps) {
                   : 'bg-blue-600 hover:bg-blue-500 shadow-blue-500/20'
               }`}
             >
-              {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-1" />}
+              {isLoading ? (
+                <Loader2 className="w-5 h-5 animate-spin" />
+              ) : isPlaying ? (
+                <Pause className="w-5 h-5" />
+              ) : (
+                <Play className="w-5 h-5 ml-1" />
+              )}
             </button>
             <button 
               onClick={handleNext}
