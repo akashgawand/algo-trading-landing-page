@@ -30,6 +30,7 @@ import { ThemeProvider, useTheme } from "./components/themeProvider";
 import apolloData from "./apolloData/data.json";
 import orionData from "./orionData/data.json";
 import nikolaiData from "./nikolAiData/data.json";
+import Link from "next/link";
 
 const ALL_STRATEGIES = {
     orion: orionData,
@@ -253,6 +254,10 @@ const DashboardCockpit = () => {
         if (!chartData.length) return [];
         let peak = chartData[0].value;
         return chartData.map((d) => {
+            // If drawdown is explicitly provided in data (like the dummy data we added), use it.
+            // Otherwise, calculate it from peak.
+            if (d.drawdown !== undefined) return d;
+
             if (d.value > peak) peak = d.value;
             const dd = peak > 0 ? ((d.value - peak) / peak) * 100 : 0;
             return { ...d, drawdown: parseFloat(dd.toFixed(2)) };
@@ -346,31 +351,41 @@ const DashboardCockpit = () => {
 
                 {/* ── UNIFIED FILTER BAR ───────────────── */}
                 <div className="mb-6 lg:mb-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 sm:gap-5">
-                    <div className="flex items-center gap-2 bg-white/[0.02] p-1 rounded-2xl border border-white/5 shadow-inner overflow-x-auto no-scrollbar" style={{ borderColor: theme.border }}>
-                        <div className="px-2.5 py-1 text-[8px] font-black text-white/10 uppercase tracking-[0.2em] border-r border-white/5 mr-1 shrink-0 hidden xs:block">Tier</div>
-                        <div className="flex gap-1 min-w-0">
-                            {accounts.map((acct, idx) => {
-                                const label = `$${Number(acct.summary.initialInvestment).toLocaleString("en-US", { notation: "compact", maximumFractionDigits: 1 })}`;
-                                const isActive = idx === accountIndex;
-                                return (
-                                    <button
-                                        key={idx}
-                                        onClick={() => handleAccountChange(idx)}
-                                        className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-black cursor-pointer transition-all duration-500 outline-none flex items-center gap-2 relative shrink-0 ${isActive ? "text-white" : "text-white/20 hover:text-white/70"
-                                            }`}
-                                    >
-                                        {isActive && (
-                                            <motion.div
-                                                layoutId="tier-pill"
-                                                className="absolute inset-0 rounded-xl bg-white/[0.08] border border-white/10"
-                                                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                                            />
-                                        )}
-                                        <span className="relative z-10">{label}</span>
-                                        {idx === 0 && <span className="relative z-10 px-1 py-0.5 rounded-[4px] bg-white/10 text-[7px] uppercase tracking-tighter text-white/40 hidden xs:inline">Pri</span>}
-                                    </button>
-                                );
-                            })}
+                    <div className="flex items-center gap-3">
+                        <Link
+                            href="/"
+                            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-white/[0.03] border border-white/5 text-[10px] sm:text-[11px] font-black text-white/30 hover:text-white/80 hover:bg-white/[0.08] transition-all duration-300 group shrink-0"
+                            style={{ borderColor: theme.border }}
+                        >
+                            <ChevronLeft className="w-3 h-3 transition-transform duration-300 group-hover:-translate-x-0.5" />
+                            <span className="tracking-[0.1em] uppercase">Back</span>
+                        </Link>
+                        <div className="flex items-center gap-2 bg-white/[0.02] p-1 rounded-2xl border border-white/5 shadow-inner overflow-x-auto no-scrollbar" style={{ borderColor: theme.border }}>
+                            <div className="px-2.5 py-1 text-[8px] font-black text-white/10 uppercase tracking-[0.2em] border-r border-white/5 mr-1 shrink-0 hidden xs:block">Tier</div>
+                            <div className="flex gap-1 min-w-0">
+                                {accounts.map((acct, idx) => {
+                                    const label = `$${Number(acct.summary.initialInvestment).toLocaleString("en-US", { notation: "compact", maximumFractionDigits: 1 })}`;
+                                    const isActive = idx === accountIndex;
+                                    return (
+                                        <button
+                                            key={idx}
+                                            onClick={() => handleAccountChange(idx)}
+                                            className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-black cursor-pointer transition-all duration-500 outline-none flex items-center gap-2 relative shrink-0 ${isActive ? "text-white" : "text-white/20 hover:text-white/70"
+                                                }`}
+                                        >
+                                            {isActive && (
+                                                <motion.div
+                                                    layoutId="tier-pill"
+                                                    className="absolute inset-0 rounded-xl bg-white/[0.08] border border-white/10"
+                                                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                                />
+                                            )}
+                                            <span className="relative z-10">{label}</span>
+                                            {idx === 0 && <span className="relative z-10 px-1 py-0.5 rounded-[4px] bg-white/10 text-[7px] uppercase tracking-tighter text-white/40 hidden xs:inline">Pri</span>}
+                                        </button>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
 
@@ -768,7 +783,7 @@ const DashboardCockpit = () => {
                             )}
                         </GlassCard>
 
-                        
+
                     </motion.div>
                 </AnimatePresence>
             </main>

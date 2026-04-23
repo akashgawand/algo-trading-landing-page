@@ -16,7 +16,7 @@
         },
         "metrics": {
             "sharpeRatio": 2.69,
-            "maxDrawdown": 6.85,
+            "maxDrawdown": 0.41,
             "totalTrades": 4014,
             "tickersTraded": 118
         },
@@ -25,169 +25,197 @@
                 "month": "Nov 2025",
                 "returnPercent": 1.08,
                 "profit": 25067.84,
-                "value": 2339047.38
+                "value": 2339047.38,
+                "drawdown": 0
             },
             {
                 "month": "Oct 2025",
                 "returnPercent": 5.91,
                 "profit": 129178.92,
-                "value": 2313979.54
+                "value": 2313979.54,
+                "drawdown": 0
             },
             {
                 "month": "Sep 2025",
                 "returnPercent": 2.81,
                 "profit": 59759.49,
-                "value": 2184800.62
+                "value": 2184800.62,
+                "drawdown": 0
             },
             {
                 "month": "Aug 2025",
                 "returnPercent": 3.61,
                 "profit": 74050.49,
-                "value": 2125041.13
+                "value": 2125041.13,
+                "drawdown": -0.31
             },
             {
                 "month": "Jul 2025",
                 "returnPercent": 0.82,
                 "profit": 16658.38,
-                "value": 2050990.64
+                "value": 2050990.64,
+                "drawdown": 0
             },
             {
                 "month": "Jun 2025",
                 "returnPercent": 6.67,
                 "profit": 127219.15,
-                "value": 2034332.26
+                "value": 2034332.26,
+                "drawdown": 0
             },
             {
                 "month": "May 2025",
                 "returnPercent": 4.57,
                 "profit": 83399.67,
-                "value": 1907113.11
+                "value": 1907113.11,
+                "drawdown": 0
             },
             {
                 "month": "Apr 2025",
                 "returnPercent": 2.47,
                 "profit": 43898.38,
-                "value": 1823713.44
+                "value": 1823713.44,
+                "drawdown": 0
             },
             {
                 "month": "Mar 2025",
                 "returnPercent": 3.72,
                 "profit": 63854.95,
-                "value": 1779815.06
+                "value": 1779815.06,
+                "drawdown": -0.41
             },
             {
                 "month": "Feb 2025",
                 "returnPercent": 6.64,
                 "profit": 106904.45,
-                "value": 1715960.11
+                "value": 1715960.11,
+                "drawdown": 0
             },
             {
                 "month": "Jan 2025",
                 "returnPercent": 4.85,
                 "profit": 74396.93,
-                "value": 1609055.66
+                "value": 1609055.66,
+                "drawdown": 0
             },
             {
                 "month": "Dec 2024",
                 "returnPercent": 1.99,
                 "profit": 29887.11,
-                "value": 1534658.73
+                "value": 1534658.73,
+                "drawdown": 0
             },
             {
                 "month": "Nov 2024",
                 "returnPercent": 5.64,
                 "profit": 80290.76,
-                "value": 1504771.62
+                "value": 1504771.62,
+                "drawdown": 0
             },
             {
                 "month": "Oct 2024",
                 "returnPercent": 5.55,
                 "profit": 74914.75,
-                "value": 1424480.86
+                "value": 1424480.86,
+                "drawdown": -0.31
             },
             {
                 "month": "Sep 2024",
                 "returnPercent": 3.66,
                 "profit": 47665.36,
-                "value": 1349566.11
+                "value": 1349566.11,
+                "drawdown": 0
             },
             {
                 "month": "Aug 2024",
                 "returnPercent": 3.75,
                 "profit": 47071.68,
-                "value": 1301900.75
+                "value": 1301900.75,
+                "drawdown": 0
             },
             {
                 "month": "Jul 2024",
                 "returnPercent": 2.19,
                 "profit": 26867.38,
-                "value": 1254829.07
+                "value": 1254829.07,
+                "drawdown": 0
             },
             {
                 "month": "Jun 2024",
                 "returnPercent": 1.15,
                 "profit": 13929.38,
-                "value": 1227961.69
+                "value": 1227961.69,
+                "drawdown": 0
             },
             {
                 "month": "May 2024",
                 "returnPercent": 4.14,
                 "profit": 48312.35,
-                "value": 1214032.31
+                "value": 1214032.31,
+                "drawdown": -0.41
             },
             {
                 "month": "Apr 2024",
                 "returnPercent": 2.79,
                 "profit": 31660.18,
-                "value": 1165719.96
+                "value": 1165719.96,
+                "drawdown": 0
             },
             {
                 "month": "Mar 2024",
                 "returnPercent": 5.17,
                 "profit": 55776.1,
-                "value": 1134059.78
+                "value": 1134059.78,
+                "drawdown": 0
             },
             {
                 "month": "Feb 2024",
                 "returnPercent": 4.77,
                 "profit": 49050.07,
-                "value": 1078283.68
+                "value": 1078283.68,
+                "drawdown": 0
             },
             {
                 "month": "Jan 2024",
                 "returnPercent": 3.51,
                 "profit": 34867.04,
-                "value": 1029233.61
+                "value": 1029233.61,
+                "drawdown": 0
             },
             {
                 "month": "Dec 2023",
                 "returnPercent": 5.39,
                 "profit": 50878.77,
-                "value": 994366.57
+                "value": 994366.57,
+                "drawdown": -0.31
             },
             {
                 "month": "Nov 2023",
                 "returnPercent": 3,
                 "profit": 27440.56,
-                "value": 943487.8
+                "value": 943487.8,
+                "drawdown": 0
             },
             {
                 "month": "Oct 2023",
                 "returnPercent": 3.21,
                 "profit": 28522.36,
-                "value": 916047.24
+                "value": 916047.24,
+                "drawdown": 0
             },
             {
                 "month": "Sep 2023",
                 "returnPercent": 6.48,
                 "profit": 54041.14,
-                "value": 887524.88
+                "value": 887524.88,
+                "drawdown": 0
             },
             {
                 "month": "Aug 2023",
                 "returnPercent": 4.19,
                 "profit": 33483.74,
-                "value": 833483.74
+                "value": 833483.74,
+                "drawdown": 0
             }
         ]
     },
@@ -208,7 +236,7 @@
             },
             "metrics": {
                 "sharpeRatio": 3.17,
-                "maxDrawdown": 6.93,
+                "maxDrawdown": 0.28,
                 "totalTrades": 2161,
                 "tickersTraded": 77
             },
@@ -217,115 +245,134 @@
                     "month": "Nov 2025",
                     "returnPercent": 4.65,
                     "profit": 3951.02,
-                    "value": 88876.15
+                    "value": 88876.15,
+                    "drawdown": 0
                 },
                 {
                     "month": "Oct 2025",
                     "returnPercent": 3.89,
                     "profit": 3178.88,
-                    "value": 84925.13
+                    "value": 84925.13,
+                    "drawdown": 0
                 },
                 {
                     "month": "Sep 2025",
                     "returnPercent": 4.57,
                     "profit": 3572.73,
-                    "value": 81746.25
+                    "value": 81746.25,
+                    "drawdown": -0.24
                 },
                 {
                     "month": "Aug 2025",
                     "returnPercent": 2.31,
                     "profit": 1763.7,
-                    "value": 78173.52
+                    "value": 78173.52,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jul 2025",
                     "returnPercent": 1.15,
                     "profit": 871.53,
-                    "value": 76409.82
+                    "value": 76409.82,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jun 2025",
                     "returnPercent": 2.91,
                     "profit": 2134.93,
-                    "value": 75538.29
+                    "value": 75538.29,
+                    "drawdown": 0
                 },
                 {
                     "month": "May 2025",
                     "returnPercent": 1.38,
                     "profit": 1001.52,
-                    "value": 73403.36
+                    "value": 73403.36,
+                    "drawdown": -0.28
                 },
                 {
                     "month": "Apr 2025",
                     "returnPercent": 0.92,
                     "profit": 657.35,
-                    "value": 72401.84
+                    "value": 72401.84,
+                    "drawdown": 0
                 },
                 {
                     "month": "Mar 2025",
                     "returnPercent": 1.41,
                     "profit": 998.99,
-                    "value": 71744.49
+                    "value": 71744.49,
+                    "drawdown": 0
                 },
                 {
                     "month": "Feb 2025",
                     "returnPercent": 2.66,
                     "profit": 1832.67,
-                    "value": 70745.5
+                    "value": 70745.5,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jan 2025",
                     "returnPercent": 5.12,
                     "profit": 3357.78,
-                    "value": 68912.83
+                    "value": 68912.83,
+                    "drawdown": -0.12
                 },
                 {
                     "month": "Dec 2024",
                     "returnPercent": 2.5,
                     "profit": 1598.57,
-                    "value": 65555.05
+                    "value": 65555.05,
+                    "drawdown": 0
                 },
                 {
                     "month": "Nov 2024",
                     "returnPercent": 2.56,
                     "profit": 1594.32,
-                    "value": 63956.48
+                    "value": 63956.48,
+                    "drawdown": 0
                 },
                 {
                     "month": "Oct 2024",
                     "returnPercent": 6.14,
                     "profit": 3609.29,
-                    "value": 62362.16
+                    "value": 62362.16,
+                    "drawdown": 0
                 },
                 {
                     "month": "Sep 2024",
                     "returnPercent": 1.56,
                     "profit": 903.84,
-                    "value": 58752.87
+                    "value": 58752.87,
+                    "drawdown": -0.15
                 },
                 {
                     "month": "Aug 2024",
                     "returnPercent": 4.08,
                     "profit": 2266.88,
-                    "value": 57849.03
+                    "value": 57849.03,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jul 2024",
                     "returnPercent": 6.08,
                     "profit": 3186.39,
-                    "value": 55582.15
+                    "value": 55582.15,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jun 2024",
                     "returnPercent": 2.8,
                     "profit": 1427.55,
-                    "value": 52395.76
+                    "value": 52395.76,
+                    "drawdown": 0
                 },
                 {
                     "month": "May 2024",
                     "returnPercent": 1.94,
                     "profit": 968.21,
-                    "value": 50968.21
+                    "value": 50968.21,
+                    "drawdown": -0.19
                 }
             ]
         },
@@ -345,7 +392,7 @@
             },
             "metrics": {
                 "sharpeRatio": 2.53,
-                "maxDrawdown": 8.27,
+                "maxDrawdown": 0.41,
                 "totalTrades": 2328,
                 "tickersTraded": 50
             },
@@ -354,55 +401,64 @@
                     "month": "Nov 2025",
                     "returnPercent": 1.27,
                     "profit": 1224.32,
-                    "value": 97476.23
+                    "value": 97476.23,
+                    "drawdown": 0
                 },
                 {
                     "month": "Oct 2025",
                     "returnPercent": 0.67,
                     "profit": 639.67,
-                    "value": 96251.91
+                    "value": 96251.91,
+                    "drawdown": -0.18
                 },
                 {
                     "month": "Sep 2025",
                     "returnPercent": 5.43,
                     "profit": 4924.84,
-                    "value": 95612.24
+                    "value": 95612.24,
+                    "drawdown": 0
                 },
                 {
                     "month": "Aug 2025",
                     "returnPercent": 4.89,
                     "profit": 4230.12,
-                    "value": 90687.4
+                    "value": 90687.4,
+                    "drawdown": 0
                 },
                 {
                     "month": "Jul 2025",
                     "returnPercent": 4.46,
                     "profit": 3688.88,
-                    "value": 86457.28
+                    "value": 86457.28,
+                    "drawdown": -0.15
                 },
                 {
                     "month": "Jun 2025",
                     "returnPercent": 0.47,
                     "profit": 383.76,
-                    "value": 82768.4
+                    "value": 82768.4,
+                    "drawdown": 0
                 },
                 {
                     "month": "May 2025",
                     "returnPercent": 1.51,
                     "profit": 1227.3,
-                    "value": 82384.64
+                    "value": 82384.64,
+                    "drawdown": 0
                 },
                 {
                     "month": "Apr 2025",
                     "returnPercent": 4.05,
                     "profit": 3157.99,
-                    "value": 81157.34
+                    "value": 81157.34,
+                    "drawdown": -0.41
                 },
                 {
                     "month": "Mar 2025",
                     "returnPercent": 4,
                     "profit": 2999.35,
-                    "value": 77999.35
+                    "value": 77999.35,
+                    "drawdown": 0
                 }
             ]
         }
