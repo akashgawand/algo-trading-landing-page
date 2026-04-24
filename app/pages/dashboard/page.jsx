@@ -782,7 +782,7 @@ const DashboardCockpit = () => {
                             />
                         )}
                         {strategy === 'nikolai' && (accountIndex === 0 || accountIndex === 1) && activeAccount?.monthlyWalkthrough && (
-                            <MonthlyWalkthrough data={activeAccount.monthlyWalkthrough} theme={theme} />
+                            <MonthlyWalkthrough data={activeAccount.monthlyWalkthrough} theme={theme} is800k={accountIndex === 0} />
                         )}
 
                     </motion.div>
