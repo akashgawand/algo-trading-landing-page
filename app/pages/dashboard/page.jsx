@@ -31,6 +31,8 @@ import apolloData from "./apolloData/data.json";
 import orionData from "./orionData/data.json";
 import nikolaiData from "./nikolAiData/data.json";
 import Link from "next/link";
+import PerformanceAnalysis from "./components/PerformanceAnalysis";
+import MonthlyWalkthrough from "./components/MonthlyWalkthrough";
 
 const ALL_STRATEGIES = {
     orion: orionData,
@@ -296,14 +298,14 @@ const DashboardCockpit = () => {
     return (
         <div className="min-h-screen font-['Inter'] antialiased">
             {/* ── TOP NAV ───────────────────────────── */}
-            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-3 sm:px-6 md:px-7 flex flex-nowrap items-center justify-between min-h-[60px] h-auto py-3 lg:py-0 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-3 sm:px-6 md:px-7 flex flex-nowrap items-center justify-between min-h-[50px] h-auto py-1 lg:py-0 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
                 style={{ borderBottom: `1px solid ${theme.border}` }}>
 
                 <div className="flex items-center gap-3 sm:gap-4 group">
                     <img
                         src="/gemalgoblue.png"
                         alt="Gemalgo Logo"
-                        className="h-12 sm:h-24 w-auto object-contain"
+                        className="h-10 sm:h-20 w-auto object-contain"
                     />
                 </div>
 
@@ -771,6 +773,17 @@ const DashboardCockpit = () => {
                             )}
                         </GlassCard>
 
+                        {/* Performance Analysis Section (NikolAi 50k & 800k) */}
+                        {strategy === 'nikolai' && (accountIndex === 0 || accountIndex === 1) && (
+                            <PerformanceAnalysis 
+                                data={accountIndex === 0 ? strategyData?.subAccounts?.[0]?.performanceAnalysis : activeAccount?.performanceAnalysis} 
+                                theme={theme} 
+                                is800k={accountIndex === 0}
+                            />
+                        )}
+                        {strategy === 'nikolai' && (accountIndex === 0 || accountIndex === 1) && activeAccount?.monthlyWalkthrough && (
+                            <MonthlyWalkthrough data={activeAccount.monthlyWalkthrough} theme={theme} is800k={accountIndex === 0} />
+                        )}
 
                     </motion.div>
                 </AnimatePresence>
