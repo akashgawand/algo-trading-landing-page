@@ -43,13 +43,13 @@
         "type": "Stocks",
         "initialInvestment": "$100,000",
         "startDate": "June 2020",
-        "currentValue": "$810,480",
-        "totalReturn": "+$690,480",
-        "returnPercent": "+575.4%",
-        "avgMonthlyPercent": "3.71%",
-        "months": 58,
-        "positiveMonths": 48,
-        "successRate": "82.8%"
+        "currentValue": "$1,370,354",
+        "totalReturn": "+$1,270,354",
+        "returnPercent": "+1270.4%",
+        "avgMonthlyPercent": "3.56%",
+        "months": 75,
+        "positiveMonths": 62,
+        "successRate": "82.7%"
       }
     ]
   },

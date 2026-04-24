@@ -298,14 +298,14 @@ const DashboardCockpit = () => {
     return (
         <div className="min-h-screen font-['Inter'] antialiased">
             {/* ── TOP NAV ───────────────────────────── */}
-            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-3 sm:px-6 md:px-7 flex flex-nowrap items-center justify-between min-h-[50px] h-auto py-1 lg:py-0 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            <nav className="sticky top-0 z-50 bg-[#05050f]/95 px-3 sm:px-6 md:px-7 flex flex-nowrap items-center justify-between min-h-[50px] h-auto py-1 lg:py-3 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
                 style={{ borderBottom: `1px solid ${theme.border}` }}>
 
-                <div className="flex items-center gap-3 sm:gap-4 group">
+                <div className="flex items-center ">
                     <img
-                        src="/gemalgoblue.png"
+                        src="/g3.png"
                         alt="Gemalgo Logo"
-                        className="h-10 sm:h-20 w-auto object-contain"
+                        className="h-8 sm:h-10 w-auto object-contain"
                     />
                 </div>
 
