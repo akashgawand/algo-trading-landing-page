@@ -84,9 +84,11 @@ const Navbar = () => {
         <div className="w-full mx-auto px-5 sm:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group relative z-50">
-            <span className="text-white font-bold text-xl tracking-tight">
-              Gem<span className="text-blue-500">algo</span>
-            </span>
+            <img
+              src="/gemalgologo.png"
+              alt="Gemalgo Logo"
+              className="h-8 sm:h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav - With Magic Highlight */}
