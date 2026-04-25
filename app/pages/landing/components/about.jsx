@@ -166,19 +166,17 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </div>
 
                             <div className="mt-10 sm:mt-12 md:mt-16 pt-8 sm:pt-10 border-t border-white/5">
-                                <div className="flex items-center gap-4 group">
-                                    <div className="relative">
-                                        <div className="relative h-14 w-14 mb-4 rounded-2xl    p-1.5 overflow-hidden">
-                                            <img
-                                                src="/g3.png"
-                                                alt="Gemalgo Logo"
-                                                className="h-8 sm:h-14  w-auto object-contain"
-                                            />
-                                        </div>
+                                <div className="flex items-center gap-3 sm:gap-4 group">
+                                    <div className="relative h-14 w-10 sm:h-14 sm:w-14 flex-shrink-0 rounded-xl sm:rounded-2xl  p-1 sm:p-1.5 overflow-hidden  transition-all duration-500">
+                                        <img
+                                            src="/g3.png"
+                                            alt="Gemalgo Logo"
+                                            className="h-full w-full object-contain"
+                                        />
                                     </div>
-                                    <div>
-                                        <p className="text-white font-bold tracking-tight">Gemalgo Global</p>
-                                        <p className="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold">Engineering Team</p>
+                                    <div className="flex flex-col justify-center">
+                                        <p className="text-white font-bold tracking-tight text-xs sm:text-base">Gemalgo Global</p>
+                                        <p className="text-[8px] sm:text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold">Engineering Team</p>
                                     </div>
                                 </div>
                             </div>
