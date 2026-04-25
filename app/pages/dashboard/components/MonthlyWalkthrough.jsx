@@ -93,7 +93,7 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                 </div>
 
                 {/* 2. Interactive Timeline Bar */}
-                <div className="bg-white/[0.02] border-b border-white/5 px-2 md:px-4 overflow-hidden">
+                <div className="bg-white/[0.05] border-b border-white/5 px-2 md:px-4 overflow-hidden">
                     <div 
                         ref={timelineRef}
                         className="flex items-center gap-2 py-3 md:py-4 no-scrollbar overflow-x-auto scroll-smooth"
@@ -105,10 +105,10 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                                 className={`shrink-0 px-3 md:px-4 py-1.5 md:py-2 rounded-lg md:rounded-xl transition-all duration-300 border ${
                                     currentIndex === idx 
                                     ? 'bg-blue-500/10 border-blue-500/40 text-white' 
-                                    : 'border-transparent text-white/20 hover:text-white/40'
+                                    : 'border-transparent text-white hover:text-white/40'
                                 }`}
                             >
-                                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest whitespace-nowrap">{m.month}</span>
+                                <span className="text-[10px] md:text-[12px] font-black uppercase tracking-widest whitespace-nowrap">{m.month}</span>
                             </button>
                         ))}
                     </div>
@@ -126,12 +126,12 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                         {/* Top Utility Row */}
                         <div className="relative z-20 flex justify-between items-start opacity-60 mb-8 lg:mb-0">
                             <div className="flex flex-col gap-1">
-                                <span className="text-[8px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>System Architecture</span>
-                                <span className="text-[9px] md:text-[10px] font-bold text-white/70 tracking-wider uppercase">NIKOLAI_CORE_V4.0</span>
+                                <span className="text-[13px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>System Architecture</span>
+                                <span className="text-[10px] md:text-[12px] font-bold text-white/80 tracking-wider uppercase">NIKOLAI_CORE_V4.0</span>
                             </div>
                             <div className="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-1 md:py-1.5 rounded-lg bg-white/5 border border-white/10">
                                 <div className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-emerald-500 animate-pulse" />
-                                <span className="text-[7px] md:text-[8px] font-black uppercase tracking-[0.3em] text-white/80">Live Auditing</span>
+                                <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white">Live Auditing</span>
                             </div>
                         </div>
 
@@ -147,12 +147,12 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                             >
                                 <div className="flex items-center gap-3 mb-6 md:mb-10">
                                     <div className="w-1 h-3 md:h-4 rounded-full" style={{ background: theme.accent }} />
-                                    <span className="text-[9px] md:text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Audit Sequence • {currentIndex + 1 < 10 ? `0${currentIndex + 1}` : currentIndex + 1}</span>
-                                    <div className="h-[1px] flex-1 bg-white/5 ml-2 md:ml-4" />
+                                    <span className="text-[10px] md:text-[12px] font-black text-white/70 uppercase tracking-[0.4em]">Audit Sequence • {currentIndex + 1 < 10 ? `0${currentIndex + 1}` : currentIndex + 1}</span>
+                                    <div className="h-[1px] flex-1 bg-white/10 ml-2 md:ml-4" />
                                 </div>
 
                                 <div className="space-y-1 md:space-y-2 mb-6 md:mb-10 text-left">
-                                    <span className="text-white/20 text-[10px] md:text-xs font-black uppercase tracking-[0.4em] block ml-0.5">Reporting Month</span>
+                                    <span className="text-white/60 text-[10px] md:text-xs font-black uppercase tracking-[0.4em] block ml-0.5">Reporting Month</span>
                                     <h3 className="text-3xl md:text-6xl font-black text-white tracking-tighter leading-tight break-words">
                                         {currentMonth.month}
                                     </h3>
@@ -160,7 +160,7 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
 
                                 <div className="flex flex-col sm:flex-row items-start sm:items-end gap-6 md:gap-10">
                                     <div className="space-y-3 md:space-y-4 w-full sm:w-auto">
-                                        <span className="text-white/20 text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black block ml-0.5">Net Performance</span>
+                                        <span className="text-white/60 text-[10px] md:text-[12px] uppercase tracking-[0.3em] font-black block ml-0.5">Net Performance</span>
                                         <div 
                                             className="inline-flex items-center gap-3 px-5 md:px-6 py-2.5 md:py-3 rounded-xl md:rounded-2xl border shadow-2xl transition-all duration-500 w-full sm:w-auto justify-center sm:justify-start"
                                             style={{ 
@@ -175,12 +175,12 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                                     </div>
 
                                     <div className="space-y-2 md:space-y-4 pb-0.5 w-full sm:w-auto border-t sm:border-none border-white/5 pt-4 sm:pt-0">
-                                        <span className="text-white/20 text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black block">Yield Analysis</span>
+                                        <span className="text-white/60 text-[10px] md:text-[12px] uppercase tracking-[0.3em] font-black block">Yield Analysis</span>
                                         <div className="flex items-baseline gap-2 justify-center sm:justify-start">
                                             <span className="text-xl md:text-2xl font-black text-white/80 tabular-nums">
                                                 {currentMonth.returnPercent >= 0 ? "+" : ""}{fmt.currency(currentMonth.change)}
                                             </span>
-                                            <span className="text-[9px] md:text-[10px] font-bold text-white/20 uppercase tracking-widest">USD</span>
+                                            <span className="text-[10px] md:text-[12px] font-bold text-white/70 uppercase tracking-widest">USD</span>
                                         </div>
                                     </div>
                                 </div>
@@ -190,12 +190,12 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                         {/* Bottom Signature Row */}
                         <div className="relative z-20 flex justify-between items-end opacity-50 pt-6 md:pt-10 border-t border-white/5 mt-8 lg:mt-0">
                             <div className="flex flex-col gap-1">
-                                <span className="text-[7px] md:text-[8px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>Data Integrity Signature</span>
-                                <span className="text-[8px] md:text-[9px] font-mono text-white/70">HASH: <span style={{ color: theme.accent }} className="opacity-90">{Math.random().toString(16).slice(2, 10).toUpperCase()}</span></span>
+                                <span className="text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>Data Integrity Signature</span>
+                                <span className="text-[10px] md:text-[11px] font-mono text-white/70">HASH: <span style={{ color: theme.accent }} className="opacity-100">{Math.random().toString(16).slice(2, 10).toUpperCase()}</span></span>
                             </div>
                             <div className="flex flex-col items-end gap-1">
-                                <span className="text-[7px] md:text-[8px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>Reporting Cycle</span>
-                                <span className="text-[9px] md:text-[10px] font-bold text-white/70">{months.length} Months Consolidated</span>
+                                <span className="text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: theme.accent }}>Reporting Cycle</span>
+                                <span className="text-[10px] md:text-[11px] font-bold text-white">{months.length} Months Consolidated</span>
                             </div>
                         </div>
                     </div>
@@ -215,21 +215,21 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                                 <div className="space-y-4 md:space-y-6">
                                     <div className="flex items-center gap-2 md:gap-3">
                                         <Calendar className="w-3.5 md:w-4 h-3.5 md:h-4 text-blue-400" />
-                                        <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/30">Strategic Position</span>
+                                        <span className="text-[10px] md:text-[12px] font-black uppercase tracking-[0.3em] text-white">Strategic Position</span>
                                     </div>
                                     <div className="space-y-1">
-                                        <span className="text-[10px] md:text-[11px] font-bold text-white/20 block">Valuation</span>
+                                        <span className="text-[10px] md:text-[12px] font-bold text-white block">Valuation</span>
                                         <span className="text-3xl md:text-5xl font-black text-white tabular-nums tracking-tighter">
                                             {fmt.currency(currentMonth.portfolioValue)}
                                         </span>
                                     </div>
                                     <div className="grid grid-cols-2 gap-3 md:gap-4">
                                         <div className="p-3 md:p-4 rounded-xl md:rounded-2xl bg-white/[0.03] border border-white/5">
-                                            <span className="text-[8px] md:text-[9px] font-black text-white/20 uppercase block mb-1">Status</span>
+                                            <span className="text-[9px] md:text-[10px] font-black text-white/90 uppercase block mb-1">Status</span>
                                             <span className="text-[10px] md:text-xs font-black text-blue-400 uppercase tracking-widest">{currentIndex === 0 ? "Initial" : "Compound"}</span>
                                         </div>
                                         <div className="p-3 md:p-4 rounded-xl md:rounded-2xl bg-white/[0.03] border border-white/5">
-                                            <span className="text-[8px] md:text-[9px] font-black text-white/20 uppercase block mb-1">Drawdown</span>
+                                            <span className="text-[9px] md:text-[10px] font-black text-white/90 uppercase block mb-1">Drawdown</span>
                                             <span className="text-[10px] md:text-xs font-black text-emerald-400 uppercase tracking-widest">Low Risk</span>
                                         </div>
                                     </div>
@@ -254,14 +254,14 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                                 <button 
                                     onClick={prevMonth}
                                     disabled={currentIndex === 0}
-                                    className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all active:scale-90 disabled:opacity-0"
+                                    className="cursor-pointer w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all active:scale-90 disabled:opacity-0"
                                 >
                                     <ChevronLeft className="w-5 md:w-6 h-5 md:h-6" />
                                 </button>
                                 
                                 <button 
                                     onClick={() => setIsPlaying(!isPlaying)}
-                                    className="h-12 md:h-14 flex-1 rounded-xl md:rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] flex items-center justify-center gap-3 md:gap-4 transition-all active:scale-95 shadow-2xl"
+                                    className="cursor-pointer h-12 md:h-14 flex-1 rounded-xl md:rounded-2xl font-black text-[11px] md:text-[13px] uppercase tracking-[0.2em] md:tracking-[0.3em] flex items-center justify-center gap-3 md:gap-4 transition-all active:scale-95 shadow-2xl"
                                     style={{ 
                                         background: isPlaying ? 'rgba(255,255,255,0.05)' : theme.accent,
                                         color: isPlaying ? 'white' : 'black'
@@ -274,7 +274,7 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                                 <button 
                                     onClick={nextMonth}
                                     disabled={currentIndex === months.length - 1}
-                                    className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all active:scale-90 disabled:opacity-0"
+                                    className="cursor-pointer w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all active:scale-90 disabled:opacity-0"
                                 >
                                     <ChevronRight className="w-5 md:w-6 h-5 md:h-6" />
                                 </button>
@@ -288,31 +288,31 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
                     <div className="space-y-1 md:space-y-2">
                         <div className="flex items-center gap-2">
                             <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                            <span className="text-[8px] md:text-[9px] font-black text-white/30 uppercase tracking-[0.2em] md:tracking-[0.3em]">Win Rate</span>
+                            <span className="text-[10px] md:text-[11px] font-black text-white/90 uppercase tracking-[0.2em] md:tracking-[0.3em]">Win Rate</span>
                         </div>
-                        <span className="text-xl md:text-2xl font-black text-white tabular-nums">{summary.positiveMonths} <span className="text-white/20 text-xs">/ {summary.totalMonths}</span></span>
+                        <span className="text-2xl md:text-3xl font-black text-white tabular-nums">{summary.positiveMonths} <span className="text-white/50 text-[20px]">/ {summary.totalMonths}</span></span>
                     </div>
 
                     <div className="space-y-1 md:space-y-2">
                         <div className="flex items-center gap-2">
                             <div className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                            <span className="text-[8px] md:text-[9px] font-black text-white/30 uppercase tracking-[0.2em] md:tracking-[0.3em]">Max Risk</span>
+                            <span className="text-[10px] md:text-[11px] font-black text-white/90 uppercase tracking-[0.2em] md:tracking-[0.3em]">Max Risk</span>
                         </div>
-                        <span className="text-xl md:text-2xl font-black text-white tabular-nums">{summary.negativeMonths} <span className="text-white/20 text-xs">/ {summary.totalMonths}</span></span>
+                        <span className="text-2xl md:text-3xl font-black text-white tabular-nums">{summary.negativeMonths} <span className="text-white/50 text-[20px]">/ {summary.totalMonths}</span></span>
                     </div>
 
                     <div className="space-y-1 md:space-y-2">
                         <div className="flex items-center gap-2">
                             <Target className="w-3 md:w-3.5 h-3 md:h-3.5 text-blue-400" />
-                            <span className="text-[8px] md:text-[9px] font-black text-white/30 uppercase tracking-[0.2em] md:tracking-[0.3em]">Accuracy</span>
+                            <span className="text-[10px] md:text-[11px] font-black text-white/90 uppercase tracking-[0.2em] md:tracking-[0.3em]">Accuracy</span>
                         </div>
-                        <span className="text-xl md:text-2xl font-black text-blue-400 tabular-nums" style={{ color: theme.accent }}>{summary.successRate}%</span>
+                        <span className="text-2xl md:text-3xl font-black text-blue-400 tabular-nums" style={{ color: theme.accent }}>{summary.successRate}%</span>
                     </div>
 
                     <div className="space-y-1 md:space-y-2 flex flex-col items-end">
                         <button 
                             onClick={restart}
-                            className="flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-lg md:rounded-xl bg-white/5 border border-white/10 text-[8px] md:text-[9px] font-black text-white/40 uppercase tracking-[0.2em] md:tracking-[0.3em] hover:text-white hover:bg-white/10 transition-all w-full md:w-auto justify-center"
+                            className="cursor-pointer flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-lg md:rounded-xl bg-white/5 border border-white/10 text-[11px] md:text-[12px] font-black text-white/70 uppercase tracking-[0.2em] md:tracking-[0.3em] hover:text-white hover:bg-white/10 transition-all w-full md:w-auto justify-center"
                         >
                             <RotateCcw className="w-3 h-3" /> Reset
                         </button>
@@ -321,11 +321,11 @@ const MonthlyWalkthrough = ({ data, theme, is800k }) => {
             </div>
 
             {/* Bottom Verifier */}
-            <div className="flex flex-col md:flex-row justify-between items-center mt-6 md:mt-12 px-4 md:px-8 text-[8px] font-black text-white/10 uppercase tracking-[0.3em] md:tracking-[0.5em] gap-3">
+           {/*  <div className="flex flex-col md:flex-row justify-between items-center mt-6 md:mt-12 px-4 md:px-8 text-[8px] font-black text-white/10 uppercase tracking-[0.3em] md:tracking-[0.5em] gap-3">
                 <span>Data Integrity: Validated</span>
                 <span className="hidden md:block">Algorithm: Nikolai Ver 4.0</span>
                 <span>Gemalgo Systems © 2026</span>
-            </div>
+            </div> */}
         </div>
     );
 };
