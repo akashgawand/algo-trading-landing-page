@@ -25,39 +25,47 @@ export const Strategies = () => {
                     Trade On Trusted US Regulated Brokers
                 </h3>
                 <div className="bg-white rounded-xl py-8 px-6 sm:px-10 shadow-lg">
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8 items-center justify-items-center">
-                        {/* Top Row */}
-                        <div className="flex items-center justify-center w-full h-12">
-                            <img src="/forexcom.webp" alt="FOREX.com" className="max-h-full max-w-full object-contain" />
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-8 items-center justify-items-center">
+                        {/* Alphabetical order by brand name */}
+                        {/* Alpaca */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/alpaca2.png" alt="Alpaca" className="w-28 h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <img src="/interactivebrokers.webp" alt="Interactive Brokers" className="max-h-full max-w-full object-contain" />
+                        {/* E*TRADE */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/etrade.png" alt="E*TRADE" className="w-28 h-18 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#1e293b] font-bold text-xl tracking-tight">Alpaca</span>
+                        {/* FOREX.com */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/forexcom.webp" alt="FOREX.com" className="w-28 h-8 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#16a34a] font-bold text-xl tracking-tight">E*TRADE</span>
+                        {/* Interactive Brokers */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/interactivebrokers.webp" alt="Interactive Brokers" className="w-28 h-10 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#ea580c] font-bold text-xl tracking-tight">NinjaTrader</span>
+                        {/* NinjaTrader */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/ninjatrader.png" alt="NinjaTrader" className="w-28 h-18 object-contain" />
                         </div>
-                        
-                        {/* Bottom Row */}
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#22c55e] font-bold text-xl tracking-tight">Robinhood</span>
+                        {/* Robinhood */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/robinhood.png" alt="Robinhood" className="w-28 h-18 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#1e3a8a] font-bold text-xl tracking-tight">StoneX</span>
+                        {/* StoneX */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/stonx.png" alt="StoneX" className="w-28 h-10 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#0f172a] font-bold text-xl tracking-tight">tastytrade</span>
+                        {/* tastytrade */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/tastytrade.png" alt="tastytrade" className="w-28 h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#2563eb] font-bold text-xl tracking-tight">TradeStation</span>
+                        {/* TradeStation */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/tradestation.png" alt="TradeStation" className="w-28 h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center w-full h-12">
-                            <span className="text-[#3b82f6] font-bold text-xl tracking-tight">Webull</span>
+                        {/* Webull */}
+                        <div className="flex items-center justify-center w-full h-14 px-2">
+                            <img src="/brands/webull.png" alt="Webull" className="w-28 h-18 object-contain" />
                         </div>
                     </div>
                 </div>
