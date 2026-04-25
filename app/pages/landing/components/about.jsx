@@ -169,11 +169,12 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                 <div className="flex items-center gap-4 group">
                                     <div className="relative">
                                         <div className="absolute inset-0 bg-blue-500/20  rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                                        <div className="relative h-14 w-14 rounded-2xl border border-white/10 bg-[#0a0a0f] p-1.5 overflow-hidden">
-                                            <div className="h-full w-full rounded-xl bg-blue-600 flex items-center justify-center font-bold text-xl text-white shadow-inner">
-                                                G
-                                            </div>
-                                        </div>
+                                        <div className="relative h-14 w-14 rounded-2xl    p-1.5 overflow-hidden">
+                                            <img
+                                                src="/g3.png"
+                                                alt="Gemalgo Logo"
+                                                className="h-8 sm:h-10 w-auto object-contain"
+                                            />                                        </div>
                                     </div>
                                     <div>
                                         <p className="text-white font-bold tracking-tight">Gemalgo Global</p>
