@@ -42,16 +42,16 @@ bg-gradient-to-b from-[#0a0613] via-[#0a0613]/60 to-transparent" />
             {/* BOTTOM BLEND */}
             <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 z-[2] 
 bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
-            
+
             <div className="absolute inset-0 z-0">
-                <div 
+                <div
                     className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1000px] opacity-20 pointer-events-none"
                     style={{
                         background: "radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.3) 0%, transparent 70%)"
                     }}
                 />
                 {/* Grid Overlay */}
-                <div 
+                <div
                     className="absolute inset-0 opacity-[0.03] pointer-events-none"
                     style={{
                         backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
@@ -61,7 +61,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
             </div>
 
             <div className="container relative z-10 mx-auto max-w-7xl px-5 sm:px-6 py-16 sm:py-20 md:py-24 lg:py-32">
-                
+
                 {/* Header Section */}
                 <motion.div {...fadeIn} className="text-center mb-10 sm:mb-14 md:mb-20">
                     <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-medium tracking-wider text-blue-300 uppercase">
@@ -78,10 +78,10 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-start">
-                    
+
                     {/* Main Narrative Column */}
                     <div className="lg:col-span-7 space-y-20">
-                        
+
                         {/* What is Gemalgo? */}
                         <motion.div {...fadeIn} transition={{ delay: 0.1 }} className="relative group">
                             <div className="absolute -left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-500/50 to-transparent hidden md:block" />
@@ -94,7 +94,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </h3>
                             <div className="space-y-6 sm:space-y-8 text-slate-400 leading-relaxed text-base sm:text-lg">
                                 <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
-                                    Gemalgo is a cutting edge algorithmic trading platform that leverages the power of artificial intelligence through the <span className="text-blue-100 font-semibold underline decoration-blue-500/50 underline-offset-4">NikolAI Algorithm</span>. 
+                                    Gemalgo is a cutting edge algorithmic trading platform that leverages the power of artificial intelligence through the <span className="text-blue-100 font-semibold underline decoration-blue-500/50 underline-offset-4">NikolAI Algorithm</span>.
                                     We provide institutional grade trading automation designed for conservative investors seeking consistent, reliable returns.
                                 </p>
                                 <div className="relative p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-[2rem] bg-gradient-to-br from-white/[0.03] to-transparent border border-white/[0.05]  overflow-hidden group-hover:border-blue-500/20 transition-all duration-500">
@@ -136,13 +136,13 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         </motion.div>
                     </div>
 
-                    
+
 
                     {/* Features Sidebar Column */}
                     <div className="lg:col-span-5 space-y-10">
-                        <motion.div 
-                            {...fadeIn} 
-                            transition={{ delay: 0.3 }} 
+                        <motion.div
+                            {...fadeIn}
+                            transition={{ delay: 0.3 }}
                             className="bg-[#0f111a]/50 border border-white/[0.05] rounded-2xl sm:rounded-[3rem] p-6 sm:p-8 md:p-10 sticky top-24  shadow-[0_0_50px_rgba(0,0,0,0.3)]"
                         >
                             <div className="flex items-center gap-3 mb-6 sm:mb-8 md:mb-10">
@@ -151,7 +151,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                 </div>
                                 <h3 className="text-xl font-bold text-white">Platform Core</h3>
                             </div>
-                            
+
                             <div className="space-y-6 sm:space-y-8 md:space-y-10">
                                 {highlights.map((item, idx) => (
                                     <div key={idx} className="flex gap-5 group cursor-default">
@@ -168,13 +168,13 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             <div className="mt-10 sm:mt-12 md:mt-16 pt-8 sm:pt-10 border-t border-white/5">
                                 <div className="flex items-center gap-4 group">
                                     <div className="relative">
-                                        <div className="absolute inset-0 bg-blue-500/20  rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                                        <div className="relative h-14 w-14 rounded-2xl    p-1.5 overflow-hidden">
+                                        <div className="relative h-14 w-14 mb-4 rounded-2xl    p-1.5 overflow-hidden">
                                             <img
                                                 src="/g3.png"
                                                 alt="Gemalgo Logo"
-                                                className="h-8 sm:h-10 w-auto object-contain"
-                                            />                                        </div>
+                                                className="h-8 sm:h-14  w-auto object-contain"
+                                            />
+                                        </div>
                                     </div>
                                     <div>
                                         <p className="text-white font-bold tracking-tight">Gemalgo Global</p>
@@ -270,7 +270,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                         </div>
                     </motion.div>
                 </div>
-            
+
             </div>
 
             {/* Bottom Glow Decoration */}
