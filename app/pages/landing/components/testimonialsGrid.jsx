@@ -60,13 +60,13 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             </span>
                         </div>
                         <p className="text-gray-500 text-xs mb-4">- Sarah Chen -</p>
-                        <div className="rounded-2xl overflow-hidden h-32 bg-gray-800">
+                        {/* <div className="rounded-2xl overflow-hidden h-32 bg-gray-800">
                             <img
                                 src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=400&h=300&fit=crop"
                                 alt="Unboxing"
                                 className="w-full h-full object-cover opacity-80"
                             />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="col-span-1 lg:col-span-3 bg-white/[0.03] rounded-3xl p-4 sm:p-5 border border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.4)] relative group transition-all duration-500 hover:bg-white/[0.06]">
@@ -74,8 +74,8 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                             The NikolAI Algorithm has been a game changer for my portfolio. Consistent returns month after month with minimal drawdowns. The team at Gemalgo is professional and responsive.
                         </p>
                         <div className="flex items-center gap-2 ">
-                             <span className="text-emerald-400 text-[10px] font-bold">SC</span>
-                             <span className="text-gray-500 text-[10px]">Michael Thompson • 2 weeks ago</span>
+                            <span className="text-emerald-400 text-[10px] font-bold">SC</span>
+                            <span className="text-gray-500 text-[10px]">Michael Thompson • 2 weeks ago</span>
                         </div>
                         
                     </div>
@@ -113,15 +113,15 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                 ))}
                             </div>
                         </div>
-                        <div className="h-40 w-full sm:w-40 lg:w-full shrink-0">
+                        {/* <div className="h-40 w-full sm:w-40 lg:w-full shrink-0">
                             <Image
-                                src="/testimonial.png"
+                                src="/seanfull.webp"
                                 alt="Customer service"
                                 width={400}
                                 height={400}
                                 className="w-full h-full object-cover object-top rounded-2xl p-2"
                             />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Center - Matthew Smith (Large) */}
