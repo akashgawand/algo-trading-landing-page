@@ -10,7 +10,7 @@
     "avgMonthlyPercent": "3.56%",
     "months": 75,
     "positiveMonths": 62,
-    "successRate": "82.7%",
+    "successRate": "84%",
     "subStrategies": [
       {
         "name": "Orion ",
@@ -64,7 +64,7 @@
     "avgMonthlyPercent": "2.58%",
     "months": 7,
     "positiveMonths": 4,
-    "successRate": "57.1%",
+    "successRate": "60.0%",
     "subStrategies": [
       {
         "name": "Apollo",
@@ -77,7 +77,7 @@
         "avgMonthlyPercent": "3.77%",
         "months": 26,
         "positiveMonths": 21,
-        "successRate": "80.8%"
+        "successRate": "79.2%"
       },
       {
         "name": "Apollo",
@@ -90,7 +90,7 @@
         "avgMonthlyPercent": "3.77%",
         "months": 24,
         "positiveMonths": 19,
-        "successRate": "79.2%"
+        "successRate": "77.3%"
       },
       {
         "name": "Apollo",
@@ -103,7 +103,7 @@
         "avgMonthlyPercent": "3.61%",
         "months": 15,
         "positiveMonths": 12,
-        "successRate": "80.0%"
+        "successRate": "76.9%"
       },
       {
         "name": "Apollo",
@@ -116,7 +116,7 @@
         "avgMonthlyPercent": "2.58%",
         "months": 7,
         "positiveMonths": 4,
-        "successRate": "57.1%"
+        "successRate": "60.0%"
       }
     ]
   },

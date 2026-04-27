@@ -15,7 +15,7 @@ const AboutGemalgo = () => {
 
     const highlights = [
         {
-            text: "Gemalgo's proven track record: 28+ months of verified performance",
+            text: "Gemalgo's proven track record: 6 years of verified performance",
             icon: <Zap className="w-5 h-5 text-blue-400" />
         },
         {
@@ -129,7 +129,7 @@ bg-gradient-to-t from-[#0a0613] via-[#0a0613]/60 to-transparent" />
                                         <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                                     </a>
                                     <a href="https://gemalgo.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold text-sm hover:bg-white/10 transition-all">
-                                        Institutional Portal
+                                        Learn More
                                     </a>
                                 </div>
                             </div>

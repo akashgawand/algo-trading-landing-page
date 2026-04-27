@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 import HeroSaaS from "@/app/pages/landing/components/hero";
-import FeaturesSection from "./components/featuresSection";
+// import FeaturesSection from "./components/featuresSection";
 import { Strategies } from "./components/strategies";
 import TestimonialsGrid from "./components/testimonialsGrid.jsx";
 import AboutGemalgo from "./components/about.jsx";
@@ -12,7 +12,7 @@ export default function LandingPage() {
       <Navbar />
       <HeroSaaS />
       <Strategies />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
       <TestimonialsGrid />
       <AboutGemalgo />
       {/* Additional sections can be added here */}
