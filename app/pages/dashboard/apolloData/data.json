@@ -7,12 +7,12 @@
             "initialInvestment": 670000,
             "currentValue": 789358,
             "totalReturn": 119358,
-            "returnPercent": 17.81,
-            "months": 5,
-            "successRate": 60,
-            "positiveMonths": 3,
-            "avgMonthlyPercent": 3.42,
-            "period": "Aug 2025 - Dec 2025"
+            "returnPercent": 17.8,
+            "months": 7,
+            "successRate": 60.0,
+            "positiveMonths": 4,
+            "avgMonthlyPercent": 3.4,
+            "period": "January 2024 - Dec 2025"
         },
         "metrics": {
             "sharpeRatio": 3.35,
@@ -76,13 +76,13 @@
             "type": "Gold ",
             "summary": {
                 "initialInvestment": 30000,
-                "currentValue": 71335,
-                "totalReturn": 41335,
-                "returnPercent": 137.78,
+                "currentValue": 77419,
+                "totalReturn": 47419,
+                "returnPercent": 160.3,
                 "months": 26,
-                "successRate": 100,
-                "positiveMonths": 26,
-                "avgMonthlyPercent": 3.77,
+                "successRate": 79.2,
+                "positiveMonths": 21,
+                "avgMonthlyPercent": 4.1,
                 "period": "January 2024 - Apr 2026"
             },
             "metrics": {
@@ -295,12 +295,12 @@
                 "initialInvestment": 50000,
                 "currentValue": 118515,
                 "totalReturn": 68515,
-                "returnPercent": 137.03,
-                "months": 22,
+                "returnPercent": 137.0,
+                "months": 24,
                 "successRate": 77.3,
-                "positiveMonths": 17,
-                "avgMonthlyPercent": 4.03,
-                "period": "Mar 2024 - Dec 2025"
+                "positiveMonths": 19,
+                "avgMonthlyPercent": 4.1,
+                "period": "March 2024 - Dec 2025"
             },
             "metrics": {
                 "sharpeRatio": 3.06,
@@ -482,14 +482,14 @@
             "type": "Gold ",
             "summary": {
                 "initialInvestment": 300000,
-                "currentValue": 774190,
-                "totalReturn": 474190,
-                "returnPercent": 158.06,
-                "months": 24,
-                "successRate": 79.2,
-                "positiveMonths": 19,
-                "avgMonthlyPercent": 4.05,
-                "period": "Jan 2024 - Dec 2025"
+                "currentValue": 501172,
+                "totalReturn": 201172,
+                "returnPercent": 68.7,
+                "months": 15,
+                "successRate": 76.9,
+                "positiveMonths": 12,
+                "avgMonthlyPercent": 4.1,
+                "period": "December 2024 - Dec 2025"
             },
             "metrics": {
                 "sharpeRatio": 3.38,

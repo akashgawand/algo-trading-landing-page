@@ -5,13 +5,13 @@
         "type": "EUR / USD",
         "summary": {
             "initialInvestment": 800000,
-            "currentValue": 2339047,
-            "totalReturn": 1539047,
-            "returnPercent": 192.38,
+            "currentValue": 2265806,
+            "totalReturn": 1465806,
+            "returnPercent": 183.2,
             "months": 28,
-            "successRate": 100,
-            "positiveMonths": 28,
-            "avgMonthlyPercent": 3.87,
+            "successRate": 92.9,
+            "positiveMonths": 26,
+            "avgMonthlyPercent": 3.9,
             "period": "August 2023 - Apr 2026"
         },
         "metrics": {
@@ -433,13 +433,13 @@
             "type": "EUR / USD",
             "summary": {
                 "initialInvestment": 50000,
-                "currentValue": 88876,
-                "totalReturn": 38876,
-                "returnPercent": 77.75,
+                "currentValue": 103569,
+                "totalReturn": 53569,
+                "returnPercent": 107.1,
                 "months": 19,
-                "successRate": 100,
-                "positiveMonths": 19,
-                "avgMonthlyPercent": 4.03,
+                "successRate": 89.5,
+                "positiveMonths": 17,
+                "avgMonthlyPercent": 4.0,
                 "period": "May 2024 - Apr 2026"
             },
             "metrics": {
@@ -776,13 +776,13 @@
             "type": "EUR / USD",
             "summary": {
                 "initialInvestment": 75000,
-                "currentValue": 97476,
-                "totalReturn": 22476,
-                "returnPercent": 29.97,
+                "currentValue": 95941,
+                "totalReturn": 20941,
+                "returnPercent": 27.9,
                 "months": 9,
-                "successRate": 100,
-                "positiveMonths": 9,
-                "avgMonthlyPercent": 2.82,
+                "successRate": 88.9,
+                "positiveMonths": 8,
+                "avgMonthlyPercent": 2.8,
                 "period": "March 2025 - Apr 2026"
             },
             "metrics": {

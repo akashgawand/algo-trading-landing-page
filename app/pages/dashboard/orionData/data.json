@@ -10,8 +10,8 @@
             "returnPercent": 1150.3,
             "months": 75,
             "successRate": 84,
-            "positiveMonths": 63,
-            "avgMonthlyPercent": 15.34,
+            "positiveMonths": 62,
+            "avgMonthlyPercent": 3.56,
             "period": "Feb 2020 - Apr 2026"
         },
         "metrics": {
@@ -734,12 +734,12 @@
             "type": "Stocks",
             "summary": {
                 "initialInvestment": 50000,
-                "currentValue": 299404,
-                "totalReturn": 249404,
-                "returnPercent": 498.81,
+                "currentValue": 318750,
+                "totalReturn": 268750,
+                "returnPercent": 537.5,
                 "months": 39,
-                "successRate": 100,
-                "positiveMonths": 39,
+                "successRate": 79.5,
+                "positiveMonths": 31,
                 "avgMonthlyPercent": 3.88,
                 "period": "January 2022 - Apr 2026"
             },
@@ -1210,12 +1210,12 @@
             "type": "Stocks",
             "summary": {
                 "initialInvestment": 75000,
-                "currentValue": 547319,
-                "totalReturn": 472319,
-                "returnPercent": 629.76,
+                "currentValue": 492300,
+                "totalReturn": 417300,
+                "returnPercent": 556.4,
                 "months": 49,
-                "successRate": 100,
-                "positiveMonths": 49,
+                "successRate": 81.6,
+                "positiveMonths": 40,
                 "avgMonthlyPercent": 4.12,
                 "period": "March 2021 - Apr 2026"
             },
