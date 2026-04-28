@@ -62,14 +62,13 @@ export default function HeroSaaS() {
         }}
       />
       <Image
-        src="/glowingplanet2.png"
+        src="/glowingplanet3.jpg"
         alt=""
         fill
         priority
         className="pointer-events-none object-cover opacity-45 contrast-125"
         style={{ zIndex: 0 }}
       />
-     
 
       <div className="container relative z-10 mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-6">
         {/* =========================================
@@ -87,8 +86,6 @@ export default function HeroSaaS() {
               // }}
             />
           </div>
-
-          
 
           <span className="mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1.5 text-[10px] sm:text-xs font-medium tracking-wide text-blue-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,1)]" />
@@ -130,7 +127,7 @@ export default function HeroSaaS() {
               </svg>
             </a>
           </div>
-          
+
           <div className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-blue-400/40 to-transparent opacity-40" />
           <div className="absolute right-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-blue-400/40 to-transparent opacity-40" />
         </div>
@@ -139,7 +136,7 @@ export default function HeroSaaS() {
             LAYER 4: FOREGROUND DASHBOARD (UI MATERIAL)
             ========================================= */}
       </div>
-    
+
       <div
         style={{ perspective: "2000px" }}
         className="hidden md:block relative z-10 mx-auto max-w-5xl px-4"
@@ -209,15 +206,18 @@ export default function HeroSaaS() {
 
           <div className="absolute -top-px left-1/2 -translate-x-1/2 w-4/5 h-px bg-gradient-to-r from-transparent via-blue-300/40 to-transparent opacity-90 shadow-[0_0_15px_rgba(147,197,253,0.5)]" />
 
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#020617]/70 p-2  shadow-[0_20px_80px_rgba(0,0,0,0.8),0_0_40px_rgba(59,130,246,0.1),inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#020617]/70 p-2 shadow-[...]">
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-blue-400/5 to-transparent pointer-events-none" />
 
             <Image
               src="/dashboard.png"
               alt="dashboard"
-              width={1000}
-              height={1000}
-              className="object-cover"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 80vw"
+              className="w-full h-auto object-contain"
+              quality={100}
+              priority
             />
           </div>
         </motion.div>

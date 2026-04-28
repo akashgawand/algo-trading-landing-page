@@ -24,13 +24,13 @@ import {
     Database,
     LineChart as LineChartIcon
 } from "lucide-react";
+import Link from "next/link";
 import { ThemeProvider, useTheme } from "./components/themeProvider";
 
 // ─── Static data imports ─────────────────────────────────────────────────────
 import apolloData from "./apolloData/data.json";
 import orionData from "./orionData/data.json";
 import nikolaiData from "./nikolAiData/data.json";
-import Link from "next/link";
 import PerformanceAnalysis from "./components/PerformanceAnalysis";
 import MonthlyWalkthrough from "./components/MonthlyWalkthrough";
 
@@ -302,11 +302,13 @@ const DashboardCockpit = () => {
                 style={{ borderBottom: `1px solid ${theme.border}` }}>
 
                 <div className="flex items-center ">
+                    <Link href={"/"}>
                     <img
                         src="/g3.png"
                         alt="Gemalgo Logo"
                         className="h-8 sm:h-10 w-auto object-contain"
                     />
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-0.5 p-1 rounded-xl border bg-[#12131a] overflow-x-auto no-scrollbar scroll-smooth" style={{ borderColor: theme.border }}>
